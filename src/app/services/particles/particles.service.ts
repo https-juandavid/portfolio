@@ -6,6 +6,7 @@ export class Particle {
   vx: number;
   vy: number;
   size: number;
+  styles: CSSStyleDeclaration;
 
   constructor() {
     this.x = Math.random() * window.innerWidth;
@@ -13,6 +14,7 @@ export class Particle {
     this.vx = (Math.random() - 0.5) * 1;
     this.vy = (Math.random() - 0.5) * 1;
     this.size = Math.random() * 3 + 2;
+    this.styles = getComputedStyle(document.documentElement);
   }
 
   update(): void {
@@ -31,7 +33,7 @@ export class Particle {
 
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(100, 255, 218, 0.3)'; // Más opaco -> más sutil
+    ctx.fillStyle = this.styles.getPropertyValue('--green-opacity'); // Más opaco -> más sutil
     ctx.fill();
 
     // Resetear shadow
