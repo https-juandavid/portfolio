@@ -16,46 +16,13 @@
                            data-animate-duration="800">
                         </p>
                         <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1000">
-                                <span class="underline">Angular </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1100">
-                                <span class="underline">RxJS </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1200">
-                                <span class="underline">HTML &amp; (S)CSS </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1300">
-                                <span class="underline">Laravel </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1400">
-                                <span class="underline">Express </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1500">
-                                <span class="underline">WordPress </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1600">
-                                <span class="underline">Jasmine / Karma (TDD) </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1700">
-                                <span class="underline">CI / CD </span>
-                            </li>
+                            @for (item of skillItems; track $index) {
+                                <li class="skill-element"
+                                    data-animate="scaleIn"
+                                    [attr.data-animate-delay]="item.delay">
+                                    <span class="underline">{{ item.name }} </span>
+                                </li>
+                            }
                         </ul>
                     </div>
                 </div>
@@ -68,7 +35,7 @@
                              class="rounded about-image clickable"
                              width="100%"
                              src="assets/images/me6.jpg"
-                             alt="José Andrés"
+                             alt="Juan David"
                              title="Click para ver imagen ampliada">
                     </div>
                 </div>
@@ -89,7 +56,7 @@
             </button>
             <img class="modal-image"
                  src="assets/images/me6.jpg"
-                 alt="José Andrés - Imagen ampliada"
+                 alt="Juan David - Imagen ampliada"
                  [@zoomIn]>
         </div>
     </div>

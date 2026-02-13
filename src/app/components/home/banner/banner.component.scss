@@ -4,44 +4,6 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    // z-index: 9999;
-
-    // Fallback: gradiente de fondo en caso de que el video no funcione
-    background: linear-gradient(135deg, #0a192f 0%, #172a45 50%, #1e3a5f 100%);
-
-    // Video de fondo
-    .banner-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 1.2s ease-in-out;
-
-        &.loaded {
-            opacity: 1;
-        }
-    }
-
-    // Overlay para oscurecer el video
-    .banner-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 25, 47, 0.85); // Más oscuro para mejor legibilidad
-        z-index: 2;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-
-        &.loaded {
-            opacity: 1;
-        }
-    }
 
     .container{
         display: table;
@@ -60,7 +22,7 @@
             }
 
             .banner-pretitle h1{
-                color: #64ffda;
+                color: $Green;
                 margin: 0 0 20px 3px;
                 font-size: 16px;
                 font-weight: normal;

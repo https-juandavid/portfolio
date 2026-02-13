@@ -1,46 +1,59 @@
-# Personal website for introduce yourself
+# Juan David Contreras - Portfolio
 
-## Getting Started
+Professional portfolio built with Angular to showcase my experience as a Software Developer, specializing in Node.js, .NET, and modern web technologies.
 
-I have developed this theme as a personal proyect. I have taked the inspiration (and basically all the design) from the wonderful work of Britanny Chiang. You can visit her repo [here](https://github.com/bchiang7/v4)
+## 🚀 About the Project
 
-Because I'm not a ReactJS expert (language of the Britanny's proyect), and I liked so much the design, I decided to develop this proyect with Angular's architecture. The website is not connected to any api yet, nither it has dinamic content so that all the content is static inside the HTML files in Angular. I want to connect it to an API in the future, from where i can manage in an easy way without having touch the HTML files in angular.
+This project is a personal showcase of my professional journey, skills, and projects. It is designed to be fast, responsive, and accessible, featuring a modern UI with smooth animations and multi-language support.
 
-If you have any idea or you just want to contribute in this repo in order to improve the development architecture, I invite you to do it! If you have some suggestion to me, i will be glade to recibe it
+### Key Features
+
+- **Internationalization (i18n):** Full support for English and Spanish, easily extensible.
+- **Responsive Design:** Optimized for all screen sizes using Bootstrap and SASS.
+- **Modern UI/UX:** Smooth scrolling with Lenis, scroll-triggered animations with AOS, and high-quality vector animations with Lottie-web.
+- **Performance:** Built with Angular 20 for optimal speed and SEO.
+
+## 🛠️ Tech Stack
+
+- **Core:** Angular 20, TypeScript, RxJS
+- **Styling:** SASS, Bootstrap 4
+- **Animations:** AOS (Animate on Scroll), Lenis (Smooth Scroll), Lottie-web, Angular Animations
+- **Icons:** FontAwesome
+- **Tools:** pnpm, Angular CLI
+
+## 📦 Getting Started
 
 ### Prerequisites
 
-You need to have npm and Angular CLI installed in your pc. Npm is aviable with NodeJS in [here](https://nodejs.org/es/). After you install npm, install Angular CLI by typping the following command in your terminal
+- Node.js (v18 or higher recommended)
+- pnpm
 
-``` bash
-npm install -g @angular/cli
-```
+### Installation
 
-### Installing
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/juandavidch/portfolio.git
+   ```
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. Run the development server:
+   ```bash
+   pnpm start
+   ```
+4. Navigate to `http://localhost:4200/`.
 
-Just clone  the repo and excecute the following command inside the folder proyect
+## 📂 Project Structure
 
-``` bash
-npm install
-```
+- `src/app/components`: Reusable UI components (Banner, AboutMe, Experience, Projects, etc.).
+- `src/assets/i18n`: Translation files (`es.json`, `en.json`).
+- `src/styles.scss`: Global styles and theme definitions.
 
-### All done!!
+## 📄 License
 
-Now just run
-```
-npm start
-```
-Wait to compile and go to [http://localhost:4200](http://localhost:4200) after compile finish
+This project is personal and all rights are reserved. Feel free to explore the code for inspiration!
 
-### Wait! I does not have finished yet!
+---
 
-I want to quote what Brittanty has added in her proyect:
-
->## 🚨 Forking this repo (please read!)
-
->Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
-
-As I have made an attribution to Brittany, i wait you do the same with both in this proyect. Thank you :)
-
-Sorry my bad English
+Developed with ❤️ by Juan David Contreras

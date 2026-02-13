@@ -1,7 +1,7 @@
 <nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
     <div class="container">
         <a class="navbar-brand text-light" [routerLink]="'inicio'">
-            <img src='assets/images/logo.png' width='25' />
+            <img src='assets/images/logo-juan.png' width='40' />
         </a>
         <ul ngbNav #nav="ngbNav" class="menu-ul">
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
@@ -69,22 +69,22 @@
                     <ol>
                         <li (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
                             <a (click)='scroll("about")'>
-                                <span>01. </span> {{"Header.Item1" | translate}}
+                                {{"Header.Item1" | translate}}
                             </a>
                         </li>
                         <li (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
                             <a (click)='scroll("jobs")'>
-                                <span>02. </span> {{"Header.Item2" | translate}}
+                                {{"Header.Item2" | translate}}
                             </a>
                         </li>
                         <li (click)='analyticsService.sendAnalyticEvent("click_jobs", "menu", "click")'>
                           <a (click)='scroll("proyects")'>
-                              <span>03. </span> {{"Header.Item3" | translate}}
+                              {{"Header.Item3" | translate}}
                           </a>
                       </li>
                       <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
                         <a (click)='scroll("proyects")'>
-                            <span>04. </span> {{"Header.Item4" | translate}}
+                            {{"Header.Item4" | translate}}
                         </a>
                       </li>
                       <li>

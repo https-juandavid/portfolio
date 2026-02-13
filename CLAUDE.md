@@ -134,7 +134,7 @@ npm run e2e          # Run end-to-end tests with Protractor
 
 ### GitHub Pages
 - Automated deployment with `npm run deploy`
-- Custom domain: andresjosehr.com
+- Custom domain: juandavidch.com
 - Base href configured for GitHub Pages routing
 
 ### Build Optimization

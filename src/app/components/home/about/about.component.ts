@@ -4,47 +4,105 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { AnimationsService } from 'src/app/services/animations/animations.service';
 
 @Component({
-    selector: 'app-about',
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.scss'],
-    animations: [
-        trigger('fadeInOut', [
-            transition(':enter', [
-                style({ opacity: 0 }),
-                animate('300ms ease-in', style({ opacity: 1 }))
-            ]),
-            transition(':leave', [
-                animate('300ms ease-out', style({ opacity: 0 }))
-            ])
-        ]),
-        trigger('zoomIn', [
-            transition(':enter', [
-                style({ transform: 'scale(0.3)', opacity: 0 }),
-                animate('400ms cubic-bezier(0.25, 0.8, 0.25, 1)', style({ transform: 'scale(1)', opacity: 1 }))
-            ])
-        ])
-    ],
-    standalone: false
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
+    ]),
+    trigger('zoomIn', [
+      transition(':enter', [
+        style({ transform: 'scale(0.3)', opacity: 0 }),
+        animate(
+          '400ms cubic-bezier(0.25, 0.8, 0.25, 1)',
+          style({ transform: 'scale(1)', opacity: 1 }),
+        ),
+      ]),
+    ]),
+  ],
+  standalone: false,
 })
 export class AboutComponent implements OnInit, AfterViewInit {
-
   isImageModalOpen = false;
+
+  skillItems = [
+    {
+      name: 'HTML & (S)CSS',
+      delay: 1000,
+    },
+    {
+      name: 'Angular',
+      delay: 1100,
+    },
+    {
+      name: 'RxJS',
+      delay: 1200,
+    },
+    {
+      name: 'React + NextJS',
+      delay: 1300,
+    },
+    {
+      name: 'NestJS',
+      delay: 1400,
+    },
+    {
+      name: 'Express',
+      delay: 1500,
+    },
+    {
+      name: 'N8N',
+      delay: 1600,
+    },
+    {
+      name: 'SQL',
+      delay: 1700,
+    },
+    {
+      name: '.NET',
+      delay: 1800,
+    },
+    {
+      name: 'Entity Framework',
+      delay: 1900,
+    },
+    {
+      name: 'Linux',
+      delay: 2000,
+    },
+    {
+      name: 'Docker',
+      delay: 2100,
+    },
+    {
+      name: 'EasyPanel',
+      delay: 2200,
+    },
+    {
+      name: 'Contabo',
+      delay: 2300,
+    }
+  ];
 
   constructor(
     public analyticsService: AnalyticsService,
     private animationsService: AnimationsService,
-    private elementRef: ElementRef
-  ) { }
+    private elementRef: ElementRef,
+  ) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     this.initAnimations();
   }
 
   onImageClick(): void {
-    this.analyticsService.sendAnalyticEvent("click_image", "about", "image");
+    this.analyticsService.sendAnalyticEvent('click_image', 'about', 'image');
     this.openImageModal();
   }
 
@@ -78,7 +136,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     if (title) {
       this.animationsService.observeElement(title, {
         type: 'slideInUp',
-        duration: 1000
+        duration: 1000,
       });
     }
 
@@ -88,7 +146,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
       this.animationsService.observeElement(p, {
         type: 'fadeInLeft',
         duration: 800,
-        delay: 200 + (index * 300)
+        delay: 200 + index * 300,
       });
     });
 
@@ -97,7 +155,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     if (skillsList) {
       this.animationsService.observeElement(skillsList as HTMLElement, {
         type: 'fadeInUp',
-        delay: 800
+        delay: 800,
       });
     }
 
@@ -106,7 +164,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     skills.forEach((skill: HTMLElement, index: number) => {
       this.animationsService.observeElement(skill, {
         type: 'scaleIn',
-        delay: 1000 + (index * 100)
+        delay: 1000 + index * 100,
       });
 
       // Añadir efectos hover
@@ -119,7 +177,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
       this.animationsService.observeElement(imageContainer as HTMLElement, {
         type: 'morphIn',
         duration: 1200,
-        delay: 600
+        delay: 600,
       });
     }
   }
