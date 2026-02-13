@@ -47,7 +47,13 @@
                         "sourceMap": true,
                         "optimization": false,
                         "namedChunks": true,
-                        "browser": "src/main.ts"
+                        "browser": "src/main.ts",
+                        "allowedCommonJsDependencies": [
+                            "aos",
+                            "ngx-owl-carousel-o",
+                            "lenis",
+                            "lottie-web"
+                        ]
                     },
                     "configurations": {
                         "production": {
