@@ -111,54 +111,6 @@
     }
   ],
 
-  "OtherProjects.Title": "More projects",
-  "OtherProjects.Projects": [
-    {
-      "Title": "Hands game",
-      "Description": "An extended Rock-Paper-Scissors game. A personal project developed in Angular where you play against the machine. It utilizes services, interfaces, and components.",
-      "imgs": ["assets/images/hands-game.png"],
-      "ghLink": "https://github.com/andresjosehr/hands-game",
-      "demoLink": "https://proyectos.andresjosehr.com/hands-game",
-      "Technologies": ["Angular", "CSS GRID", "SASS", "Angular animations"]
-    },
-    {
-      "Title": "Countries viewer",
-      "Description": "Interface that consumes a countries API to visualize a list of countries, view details, and filter by name and region. It also includes a dark mode toggle.",
-      "imgs": ["assets/images/countries-viewer.png"],
-      "ghLink": "https://github.com/andresjosehr/countries-viewer",
-      "demoLink": "https://proyectos.andresjosehr.com/countries-viewer",
-      "Technologies": ["Angular", "RxJS", "SASS", "API"]
-    },
-    {
-      "Title": "Four card feature section",
-      "Description": "A single-page design with a minimalist layout listing 4 features in 4 cards. Uses Angular animations for entrance effects.",
-      "ghLink": "https://github.com/andresjosehr/fourd-card-feature-section",
-      "demoLink": "https://proyectos.andresjosehr.com/four-card-feature-section",
-      "Technologies": ["Angular", "SASS", "CSS GRID"]
-    },
-    {
-      "Title": "Social proof section",
-      "Description": "A personal project of a page designed from a Figma template. Developed using Angular along with SASS and CSS GRID.",
-      "ghLink": "https://github.com/andresjosehr/social-proof-section",
-      "demoLink": "https://proyectos.andresjosehr.com/social-proof-section",
-      "Technologies": ["Angular", "CSS GRID", "GIT"]
-    },
-    {
-      "Title": "FAQ accordion card",
-      "Description": "FAQ accordion with logic and animations implemented in Angular.",
-      "ghLink": "https://github.com/andresjosehr/faq-accordion",
-      "demoLink": "https://proyectos.andresjosehr.com/faq-accordion",
-      "Technologies": ["Angular", "CSS GRID", "Angular animations"]
-    },
-    {
-      "Title": "Profile card",
-      "Description": "Simple single-page profile card design with basic information.",
-      "ghLink": "https://github.com/andresjosehr/profile-card-component",
-      "demoLink": "https://proyectos.andresjosehr.com/profile-card-component",
-      "Technologies": ["Angular", "SASS", "GIT"]
-    }
-  ],
-
   "Contact.Pretitle": "And... Now?",
   "Contact.Title": "Say Hi!",
   "Contact.Content": "I'll be happy to hear from you if you'd like to talk about new opportunities. Message me, and I'll respond as soon as I see it.",
