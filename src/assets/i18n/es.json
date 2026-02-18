@@ -15,8 +15,8 @@
 
   "AboutMe.Title": "Acerca de mí",
   "AboutMe.Paragraphs": [
-    "En <span class='underline'>+2 años de experiencia</span> he cubierto los roles de: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span> y <span class='underline'>analista de automatizaciones</span>. Me encanta aportar mis conocimientos para crear cosas nuevas que ayuden a resolver problemas.",
-    "Mis capacidades también incluyen implementar mejoras en sistemas, optimizar sitios, estandarizar patrones y sugerir y ejecutar ideas que añadan valor al proyecto en el que esté trabajando.",
+    "En <span class='underline'>+2 años de experiencia</span> he cubierto los roles de: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span> y <span class='underline'>analista de automatizaciones</span>. Me encanta aportar mis habuilidades y conocimientos para crear cosas nuevas que ayuden a resolver problemas.",
+    "Constantemente busco optimizar los flujos de trabajo mediante la integración de <span class='underline'>Agentes de IA</span> y <span class='underline'>Servidores MCP</span> para agilizar el desarrollo de tareas. Mi enfoque no es solo la rapidez, sino aplicar la IA de manera <span class='underline'>segura</span>, <span class='underline'>eficiente </span> y <span class='underline'>escalable</span>, estandarizando patrones que permitan que el proyecto avance de forma ágil, organizada y con una base sólida.",
     "Algunas de las tecnologías en las que me he capacitado y trabajado incluyen (pero no se limitan) a:"
   ],
 
@@ -56,12 +56,12 @@
         "Realizar refactorización de código antiguo. Asegurar la compatibilidad de cada dependencia en cada actualización, junto también con la actualización regular de <span class='underline'>Angular</span>."
       ]
     },
-    
+
     {
       "Tab": "Schein",
       "Title": "Desarrollador Web Fullstack",
       "Date": "Octubre 2024 - Febrero 2025",
-        "Description": [
+      "Description": [
         "Desarrollando y manteniendo una plataforma de gestión empresarial ERP con datos de contabilidad, inventario, clientes y proveedores desarrollada en Blazor, con <span class='underline'>.NET</span> y <span class='underline'>SQL Server</span>.",
         "Refactorizando y optimizando tiempos de despliegue de la aplicación.",
         "Codificación de peticiones a API con las librerias de <span class='underline'>.NET</span> y <span class='underline'>EntityFramework</span>.",
@@ -101,19 +101,23 @@
         "assets/images/lotto/ss_lotto_dashboard.png",
         "assets/images/lotto/ss_lotto_sale_completed.png"
       ],
-      "Technologies": ["NodeJS", "React", "Radix UI", "TailwindCSS", "SocketIO", "ExcelJS"]
-    }, 
+      "Technologies": [
+        "NodeJS",
+        "React",
+        "Radix UI",
+        "TailwindCSS",
+        "SocketIO",
+        "ExcelJS"
+      ]
+    },
 
     {
       "Title": "Latin Lust Studios",
       "Description": "Diseñé el logo y desarrollé el sitio web de <span class='underline'>Latin Lust Studios</span>, implementando una interfaz responsive, <span class='underline'>identidad visual coherente</span> y estructura optimizada para presentación de servicios y captación de clientes en una plataforma de producción y streaming para adultos.",
-      "imgs": [
-        "assets/images/latin-lust-studios/latin-lust-screenshot.png"
-      ],
+      "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.png"],
       "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"]
     }
-
-  ],  
+  ],
 
   "Contact.Pretitle": "Y... ¿Ahora?",
   "Contact.Title": "¡Salúdame!",

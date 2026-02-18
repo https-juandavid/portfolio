@@ -60,6 +60,14 @@ export class AboutComponent implements OnInit, AfterViewInit {
       delay: 1600,
     },
     {
+      name: 'LLMs ',
+      delay: 1650,
+    },
+    {
+      name: 'MCP',
+      delay: 1660,
+    },
+    {
       name: 'SQL',
       delay: 1700,
     },
@@ -86,7 +94,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     {
       name: 'Contabo',
       delay: 2300,
-    }
+    },
   ];
 
   constructor(

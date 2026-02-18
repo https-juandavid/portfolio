@@ -16,7 +16,7 @@
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
     "Over <span class='underline'>+2 years of experience</span>, I have covered roles as: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span>, and <span class='underline'>automation analyst</span>. I love contributing my knowledge to create new things that help solve problems.",
-    "My capabilities also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I am working on.",
+    "I constantly seek to optimize workflows by integrating <span class='underline'>AI Agents</span> and <span class='underline'>MCP Servers</span> to streamline task development. My focus is not only on speed, but on applying AI in a <span class='underline'>secure</span>, <span class='underline'>efficient</span>, and <span class='underline'>scalable</span> way, standardizing patterns that allow the project to progress in an agile, organized manner with a solid foundation.",
     "Some of the technologies I have been trained in and worked with include (but are not limited to):"
   ],
 
@@ -99,14 +99,19 @@
         "assets/images/lotto/ss_lotto_dashboard.png",
         "assets/images/lotto/ss_lotto_sale_completed.png"
       ],
-      "Technologies": ["NodeJS", "React", "Radix UI", "TailwindCSS", "SocketIO", "ExcelJS"]
+      "Technologies": [
+        "NodeJS",
+        "React",
+        "Radix UI",
+        "TailwindCSS",
+        "SocketIO",
+        "ExcelJS"
+      ]
     },
     {
       "Title": "Latin Lust Studios",
       "Description": "I designed the logo and developed the website for <span class='underline'>Latin Lust Studios</span>, implementing a responsive interface, <span class='underline'>consistent visual identity</span>, and an optimized structure for service presentation and client acquisition for an adult production and streaming platform.",
-      "imgs": [
-        "assets/images/latin-lust-studios/latin-lust-screenshot.png"
-      ],
+      "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.png"],
       "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"]
     }
   ],
