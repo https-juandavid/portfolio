@@ -1,12 +1,18 @@
 import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from '@angular/animations';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { AnimationsService } from 'src/app/services/animations/animations.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  selector: 'app-soft-skills',
+  templateUrl: './soft-skills.component.html',
+  styleUrls: ['./soft-skills.component.scss'],
   animations: [
     trigger('fadeInOut', [
       transition(':enter', [
@@ -27,7 +33,7 @@ import { AnimationsService } from 'src/app/services/animations/animations.servic
   ],
   standalone: false,
 })
-export class AboutComponent implements OnInit, AfterViewInit {
+export class SoftSkillsComponent implements OnInit, AfterViewInit {
   isImageModalOpen = false;
 
   constructor(
@@ -43,10 +49,10 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   private initAnimations(): void {
-    const aboutSection = this.elementRef.nativeElement;
+    const section = this.elementRef.nativeElement;
 
-    // Animar título
-    const title = aboutSection.querySelector('.about-title');
+    // Animate title
+    const title = section.querySelector('.section-title');
     if (title) {
       this.animationsService.observeElement(title, {
         type: 'slideInUp',
@@ -54,45 +60,26 @@ export class AboutComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar párrafos con stagger
-    const paragraphs = aboutSection.querySelectorAll('.about-description p');
-    paragraphs.forEach((p: HTMLElement, index: number) => {
-      this.animationsService.observeElement(p, {
-        type: 'fadeInLeft',
-        duration: 800,
-        delay: 200 + index * 300,
-      });
-    });
-
-    // Animar lista de skills
-    const skillsList = aboutSection.querySelector('.skills-list');
-    if (skillsList) {
-      this.animationsService.observeElement(skillsList as HTMLElement, {
-        type: 'fadeInUp',
-        delay: 800,
-      });
-    }
-
-    // Animar skills individuales con stagger
-    const skills = aboutSection.querySelectorAll('.skill-element');
-    skills.forEach((skill: HTMLElement, index: number) => {
-      this.animationsService.observeElement(skill, {
-        type: 'scaleIn',
-        delay: 1000 + index * 100,
-      });
-
-      // Añadir efectos hover
-      this.animationsService.addHoverEffects(skill, ['lift', 'glow']);
-    });
-
-    // Animar imagen
-    const imageContainer = aboutSection.querySelector('.about-img-container');
+    // Animate image
+    const imageContainer = section.querySelector('.soft-skills-img-container');
     if (imageContainer) {
       this.animationsService.observeElement(imageContainer as HTMLElement, {
         type: 'morphIn',
         duration: 1200,
-        delay: 600,
+        delay: 200,
       });
     }
+
+    // Animate skills with stagger
+    const skills = section.querySelectorAll('.skill-card');
+    skills.forEach((skill: HTMLElement, index: number) => {
+      this.animationsService.observeElement(skill, {
+        type: 'fadeInUp', // Or fadeInLeft since it's on the right now? About used FadeInLeft for text on Left. Maybe FadeInRight?
+        duration: 800,
+        delay: 400 + index * 100,
+      });
+
+      this.animationsService.addHoverEffects(skill, ['lift', 'glow']);
+    });
   }
 }

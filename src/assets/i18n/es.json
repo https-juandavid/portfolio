@@ -1,8 +1,9 @@
 {
   "Header.Item1": "Acerca de mí",
   "Header.Item2": "Experiencia",
-  "Header.Item3": "Proyectos",
-  "Header.Item4": "Contacto",
+  "Header.Item3": "Habilidades",
+  "Header.Item4": "Proyectos",
+  "Header.Item5": "Contacto",
   "Header.cvBtn": "Curriculum",
   "Header.cvName": "CV_Juan_David_Contreras_Espanol.pdf",
   "Loading": "Cargando...",
@@ -11,13 +12,79 @@
   "Banner.Name": "Juan David Contreras",
   "Banner.Subtitle": "Software Developer",
   "Banner.Description": "Tengo <span class='underline'>+2 años de experiencia</span> desarrollando sistemas, interfaces, automatizaciones, bots y soluciones tecnológicas para hacer de la web un lugar mejor. Me dedico a escribir y refactorizar código limpio, reutilizable y escalable con herramientas de <span class='underline'>Node.js</span> y <span class='underline'>.NET</span> aplicando buenas prácticas y estándares de desarrollo.",
-  "Banner.ActionBtn": "Salúdame",
+  "Banner.ActionBtn": "Contactame",
 
   "AboutMe.Title": "Acerca de mí",
   "AboutMe.Paragraphs": [
-    "En <span class='underline'>+2 años de experiencia</span> he cubierto los roles de: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span> y <span class='underline'>analista de automatizaciones</span>. Me encanta aportar mis habuilidades y conocimientos para crear cosas nuevas que ayuden a resolver problemas.",
-    "Constantemente busco optimizar los flujos de trabajo mediante la integración de <span class='underline'>Agentes de IA</span> y <span class='underline'>Servidores MCP</span> para agilizar el desarrollo de tareas. Mi enfoque no es solo la rapidez, sino aplicar la IA de manera <span class='underline'>segura</span>, <span class='underline'>eficiente </span> y <span class='underline'>escalable</span>, estandarizando patrones que permitan que el proyecto avance de forma ágil, organizada y con una base sólida.",
+    "En <span class='underline'>+2 años de experiencia</span> he cubierto los roles de: <span class='underline'>desarrollador backend</span>, <span class='underline'>desarrollador frontend</span>, y <span class='underline'>analista de automatizaciones</span>. Me encanta aportar mis habilidades y conocimientos para crear cosas nuevas que ayuden a resolver problemas.",
+    "A lo largo de mi carrera he adquirido habilidades que me permiten optimizar procesos y flujos de trabajo mediante la integración de <span class='underline'>Agentes de IA</span>, <span class='underline'>Servidores MCP</span> y <span class='underline'>Automatizaciones</span> para agilizar el desarrollo de tareas, así como las de mi equipo. Mi enfoque no es solo la rapidez, sino aplicar la IA de manera <span class='underline'>segura</span>, <span class='underline'>eficiente </span> y <span class='underline'>escalable</span>, estandarizando patrones que permitan que el proyecto avance de forma ágil, organizada y con una base sólida.",
     "Algunas de las tecnologías en las que me he capacitado y trabajado incluyen (pero no se limitan) a:"
+  ],
+  "AboutMe.Skills": [
+    {
+      "Name": "HTML & (S)CSS",
+      "Delay": 1000
+    },
+    {
+      "Name": "Angular",
+      "Delay": 1100
+    },
+    {
+      "Name": "RxJS",
+      "Delay": 1200
+    },
+    {
+      "Name": "React + NextJS",
+      "Delay": 1300
+    },
+    {
+      "Name": "NestJS",
+      "Delay": 1400
+    },
+    {
+      "Name": "Express",
+      "Delay": 1500
+    },
+    {
+      "Name": "N8N",
+      "Delay": 1600
+    },
+    {
+      "Name": "LLMs ",
+      "Delay": 1650
+    },
+    {
+      "Name": "MCP",
+      "Delay": 1660
+    },
+    {
+      "Name": "SQL",
+      "Delay": 1700
+    },
+    {
+      "Name": ".NET",
+      "Delay": 1800
+    },
+    {
+      "Name": "Entity Framework",
+      "Delay": 1900
+    },
+    {
+      "Name": "Linux",
+      "Delay": 2000
+    },
+    {
+      "Name": "Docker",
+      "Delay": 2100
+    },
+    {
+      "Name": "EasyPanel",
+      "Delay": 2200
+    },
+    {
+      "Name": "Contabo",
+      "Delay": 2300
+    }
   ],
 
   "Experience.Title": "Experiencia",
@@ -63,7 +130,8 @@
       "Date": "Octubre 2024 - Febrero 2025",
       "Description": [
         "Desarrollando y manteniendo una plataforma de gestión empresarial ERP con datos de contabilidad, inventario, clientes y proveedores desarrollada en Blazor, con <span class='underline'>.NET</span> y <span class='underline'>SQL Server</span>.",
-        "Refactorizando y optimizando tiempos de despliegue de la aplicación.",
+        "Analisis y desarrollo del modulo mesa de ayuda para la gestión interna de los tickets de soporte en las diferentes areas de la empresa de nuestro cliente.",
+        "Refactorización de código legacy y optimización de tiempos de despliegue de la aplicación.",
         "Codificación de peticiones a API con las librerias de <span class='underline'>.NET</span> y <span class='underline'>EntityFramework</span>.",
         "Realizar refactorización de código antiguo. Aplicando consultas <span class='underline'>LinQ</span> para optimizar tiempos de carga de datos."
       ]
@@ -90,7 +158,8 @@
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.png"
       ],
-      "Technologies": ["React", "Radix UI", "TailwindCSS", "Zod"]
+      "Technologies": ["React", "Radix UI", "TailwindCSS", "Zod"], 
+      "Link": "https://multisoluciones-santander.vercel.app/"
     },
 
     {
@@ -108,18 +177,62 @@
         "TailwindCSS",
         "SocketIO",
         "ExcelJS"
-      ]
+      ],
+      "Link": ""
     },
 
     {
       "Title": "Latin Lust Studios",
       "Description": "Diseñé el logo y desarrollé el sitio web de <span class='underline'>Latin Lust Studios</span>, implementando una interfaz responsive, <span class='underline'>identidad visual coherente</span> y estructura optimizada para presentación de servicios y captación de clientes en una plataforma de producción y streaming para adultos.",
       "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.png"],
-      "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"]
+      "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"],
+      "Link": ""
     }
   ],
 
   "Contact.Pretitle": "Y... ¿Ahora?",
+
+  "SoftSkills.Title": "Habilidades Blandas",
+  "SoftSkills.Description": [
+    "A lo largo de mi trayectoria profesional he desarrollado una sólida capacidad de <span class='underline'>comunicación estratégica</span>, permitiéndome traducir necesidades de negocio en soluciones técnicas claras y ejecutables.",
+    "Me caracterizo por una <span class='underline'>mentalidad analítica</span> y una fuerte <span class='underline'>orientación a resultados</span>, poniendo siempre en mente la eficiencia, escalabilidad y calidad de cada proyecto al que contribuyo.", 
+    "Aplico tanto en mi vida personal como profesional el principio <span class='underline'>Kaizen</span>, enfocado en la <span class='underline'>mejora continua</span> mediante pequeños avances sostenidos, lo que me permite optimizar procesos de forma constante y estratégica.",
+    "He tenido la oportunidad de trabajar en equipos multidisciplinarios, entornos que me han enseñado valiosas habilidades como:"
+  ],
+  "SoftSkills.Skills": [
+    {
+      "Name": "Autogestión",
+      "Delay": 1000
+    },
+    {
+      "Name": "Trabajo en Equipo",
+      "Delay": 1100
+    },
+    {
+      "Name": "Responsabilidad Profesional",
+      "Delay": 1200
+    },
+    {
+      "Name": "Gestión de Tiempos",
+      "Delay": 1300
+    },
+    {
+      "Name": "Pensamiento Crítico",
+      "Delay": 1400
+    },
+    {
+      "Name": "Adaptabilidad",
+      "Delay": 1500
+    },
+    {
+      "Name": "Aprendizaje Continuo",
+      "Delay": 1600
+    },
+    {
+      "Name": "Resolución de Problemas",
+      "Delay": 1700
+    }
+  ],
   "Contact.Title": "¡Salúdame!",
   "Contact.Content": "Estaré encantado de recibir tu contacto si quieres conversar acerca de nuevas oportunidades. Escríbeme, y te responderé tan pronto como vea tu mensaje.",
   "Contact.Btn": "Contactame"

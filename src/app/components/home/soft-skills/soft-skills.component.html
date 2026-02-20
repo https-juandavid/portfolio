@@ -1,39 +1,62 @@
 <section
-  class="section about"
-  id="about"
+  class="section soft-skills"
+  id="soft-skills"
   tabindex="0"
 >
   <div class="container">
     <div class="section-box">
       <div
-        class="about-title"
+        class="section-title-container"
         data-animate="slideInUp"
         data-animate-duration="1000"
       >
         <h3 class="section-title">
-          <span class="n-section-title">01.</span>
-          {{ "AboutMe.Title" | translate }}
+          <span class="n-section-title">03.</span>
+          {{ "SoftSkills.Title" | translate }}
         </h3>
       </div>
+
       <div class="row">
-        <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <div class="about-description">
+        <!-- Image Column (Left) -->
+        <div
+          class="col-12 col-md-6 mb-4 mb-md-0 text-center order-1 order-md-0"
+        >
+          <div class="soft-skills-img-container">
+            <img
+              class="rounded soft-skills-image clickable"
+              width="100%"
+              src="assets/images/AI-setup-image.png"
+              alt="Soft Skills"
+              title="Click para ver imagen ampliada"
+            />
+          </div>
+        </div>
+
+        <!-- Content Column (Right) -->
+        <div class="col-12 col-md-6 mt-4 mt-md-0 order-0 order-md-1">
+          <div class="soft-skills-description">
+            <!-- Description Paragraphs -->
             <p
               *ngFor="
-                let text of 'AboutMe.Paragraphs' | translate;
+                let text of 'SoftSkills.Description' | translate;
                 let i = index
               "
               [innerHTML]="text"
-              data-animate="fadeInLeft"
-              [attr.data-animate-delay]="200 + i * 300"
+              data-animate="fadeInRight"
+              [attr.data-animate-delay]="200 + i * 200"
               data-animate-duration="800"
             ></p>
+
+            <!-- Skills Grid -->
             <ul
               class="skills-list"
               data-animate="fadeInUp"
               data-animate-delay="800"
             >
-              @for (item of "AboutMe.Skills" | translate; track $index) {
+              @for (
+                item of "SoftSkills.Skills" | translate;
+                track $index
+              ) {
                 <li
                   class="skill-element"
                   data-animate="scaleIn"
@@ -45,27 +68,11 @@
             </ul>
           </div>
         </div>
-        <div
-          class="col-12 col-md-6 mt-4 mt-md-0 text-center"
-          data-animate="morphIn"
-          data-animate-duration="1200"
-          data-animate-delay="600"
-        >
-          <div class="about-img-container">
-            <img
-              class="rounded about-image clickable"
-              width="100%"
-              src="assets/images/me6.jpg"
-              alt="Juan David"
-              title="Click para ver imagen ampliada"
-            />
-          </div>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal para imagen ampliada -->
+  <!-- Modal for expanded image -->
   <div
     class="image-modal-overlay"
     *ngIf="isImageModalOpen"
@@ -83,7 +90,7 @@
       <img
         class="modal-image"
         src="assets/images/me6.jpg"
-        alt="Juan David - Imagen ampliada"
+        alt="Soft Skills - Imagen ampliada"
         [@zoomIn]
       />
     </div>

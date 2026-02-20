@@ -13,12 +13,11 @@ import { NgbModule, NgbNav, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GeneralModule } from '../general/general.module';
+import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
 
-export function HttpLoaderFactory(http: HttpClient){
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-
-
 
 @NgModule({
   declarations: [
@@ -29,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient){
     ProyectsComponent,
     MoreProyectsComponent,
     ContactComponent,
+    SoftSkillsComponent,
   ],
   imports: [
     CommonModule,
@@ -37,11 +37,11 @@ export function HttpLoaderFactory(http: HttpClient){
     GeneralModule,
     TranslateModule.forChild({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-      }
-    })
-  ]
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}

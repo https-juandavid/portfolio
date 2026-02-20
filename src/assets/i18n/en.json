@@ -1,8 +1,9 @@
 {
   "Header.Item1": "About me",
   "Header.Item2": "Experience",
-  "Header.Item3": "Projects",
-  "Header.Item4": "Contact",
+  "Header.Item3": "Skills",
+  "Header.Item4": "Projects",
+  "Header.Item5": "Contact",
   "Header.cvBtn": "Resume",
   "Header.cvName": "CV_Juan_David_Contreras_English.pdf",
   "Loading": "Loading...",
@@ -11,13 +12,79 @@
   "Banner.Name": "Juan David Contreras",
   "Banner.Subtitle": "Software Developer",
   "Banner.Description": "I have <span class='underline'>+2 years of experience</span> developing systems, interfaces, automations, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code with <span class='underline'>Node.js</span> and <span class='underline'>.NET</span> tools, applying best practices and development standards.",
-  "Banner.ActionBtn": "Say hi",
+  "Banner.ActionBtn": "Contact me",
 
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
     "Over <span class='underline'>+2 years of experience</span>, I have covered roles as: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span>, and <span class='underline'>automation analyst</span>. I love contributing my knowledge to create new things that help solve problems.",
-    "I constantly seek to optimize workflows by integrating <span class='underline'>AI Agents</span> and <span class='underline'>MCP Servers</span> to streamline task development. My focus is not only on speed, but on applying AI in a <span class='underline'>secure</span>, <span class='underline'>efficient</span>, and <span class='underline'>scalable</span> way, standardizing patterns that allow the project to progress in an agile, organized manner with a solid foundation.",
+    "Throughout my career, I have acquired skills that allow me to optimize processes and workflows by integrating <span class='underline'>AI Agents</span>, <span class='underline'>MCP Servers</span>, and <span class='underline'>Automations</span> to streamline task development, as well as those of my team. My focus is not only on speed, but on applying AI in a <span class='underline'>secure</span>, <span class='underline'>efficient</span>, and <span class='underline'>scalable</span> way, standardizing patterns that allow the project to progress in an agile, organized manner with a solid foundation.",
     "Some of the technologies I have been trained in and worked with include (but are not limited to):"
+  ],
+  "AboutMe.Skills": [
+    {
+      "Name": "HTML & (S)CSS",
+      "Delay": 1000
+    },
+    {
+      "Name": "Angular",
+      "Delay": 1100
+    },
+    {
+      "Name": "RxJS",
+      "Delay": 1200
+    },
+    {
+      "Name": "React + NextJS",
+      "Delay": 1300
+    },
+    {
+      "Name": "NestJS",
+      "Delay": 1400
+    },
+    {
+      "Name": "Express",
+      "Delay": 1500
+    },
+    {
+      "Name": "N8N",
+      "Delay": 1600
+    },
+    {
+      "Name": "LLMs ",
+      "Delay": 1650
+    },
+    {
+      "Name": "MCP",
+      "Delay": 1660
+    },
+    {
+      "Name": "SQL",
+      "Delay": 1700
+    },
+    {
+      "Name": ".NET",
+      "Delay": 1800
+    },
+    {
+      "Name": "Entity Framework",
+      "Delay": 1900
+    },
+    {
+      "Name": "Linux",
+      "Delay": 2000
+    },
+    {
+      "Name": "Docker",
+      "Delay": 2100
+    },
+    {
+      "Name": "EasyPanel",
+      "Delay": 2200
+    },
+    {
+      "Name": "Contabo",
+      "Delay": 2300
+    }
   ],
 
   "Experience.Title": "Experience",
@@ -56,15 +123,17 @@
         "Refactoring legacy code and ensuring dependency compatibility during updates, along with regular <span class='underline'>Angular</span> version upgrades."
       ]
     },
+
     {
       "Tab": "Schein",
       "Title": "Fullstack Web Developer",
       "Date": "October 2024 - February 2025",
       "Description": [
         "Developing and maintaining an ERP business management platform for accounting, inventory, customers, and suppliers, built with Blazor, <span class='underline'>.NET</span>, and <span class='underline'>SQL Server</span>.",
-        "Refactoring and optimizing application deployment times.",
+        "Analysis and development of the help desk module for internal management of support tickets in different areas of our client's company.",
+        "Refactoring legacy code and optimizing application deployment times.",
         "Coding API requests using <span class='underline'>.NET</span> libraries and <span class='underline'>EntityFramework</span>.",
-        "Refactoring legacy code and applying <span class='underline'>LINQ</span> queries to optimize data loading times."
+        "Refactoring code and applying <span class='underline'>LINQ</span> queries to optimize data loading times."
       ]
     },
     {
@@ -89,8 +158,10 @@
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.png"
       ],
-      "Technologies": ["React", "Radix UI", "TailwindCSS", "Zod"]
+      "Technologies": ["React", "Radix UI", "TailwindCSS", "Zod"],
+      "Link": "https://multisoluciones-santander.vercel.app/"
     },
+
     {
       "Title": "Lotto",
       "Description": "I participated in the development of a fullstack system for tracking lottery ticket sales. It features a <span class='underline'>point-of-sale module</span>, <span class='underline'>real-time notifications</span>, <span class='underline'>Excel file export</span>, and more. Developed using <span class='underline'>React</span> and <span class='underline'>NodeJS</span>.",
@@ -106,17 +177,62 @@
         "TailwindCSS",
         "SocketIO",
         "ExcelJS"
-      ]
+      ],
+      "Link": ""
     },
+
     {
       "Title": "Latin Lust Studios",
       "Description": "I designed the logo and developed the website for <span class='underline'>Latin Lust Studios</span>, implementing a responsive interface, <span class='underline'>consistent visual identity</span>, and an optimized structure for service presentation and client acquisition for an adult production and streaming platform.",
       "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.png"],
-      "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"]
+      "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"],
+      "Link": ""
     }
   ],
 
   "Contact.Pretitle": "And... Now?",
+
+  "SoftSkills.Title": "Soft Skills",
+  "SoftSkills.Description": [
+    "Throughout my professional career, I have developed a solid capacity for <span class='underline'>strategic communication</span>, allowing me to translate business needs into clear and executable technical solutions.",
+    "I am characterized by an <span class='underline'>analytical mindset</span> and a strong <span class='underline'>results orientation</span>, always keeping in mind the efficiency, scalability, and quality of every project I contribute to.",
+    "I apply the <span class='underline'>Kaizen</span> principle in both my personal and professional life, focusing on <span class='underline'>continuous improvement</span> through small sustained advances, which allows me to constantly and strategically optimize processes.",
+    "I have had the opportunity to work in multidisciplinary teams, environments that have taught me valuable skills such as:"
+  ],
+  "SoftSkills.Skills": [
+    {
+      "Name": "Self-management",
+      "Delay": 1000
+    },
+    {
+      "Name": "Teamwork",
+      "Delay": 1100
+    },
+    {
+      "Name": "Professional Responsibility",
+      "Delay": 1200
+    },
+    {
+      "Name": "Time Management",
+      "Delay": 1300
+    },
+    {
+      "Name": "Critical Thinking",
+      "Delay": 1400
+    },
+    {
+      "Name": "Adaptability",
+      "Delay": 1500
+    },
+    {
+      "Name": "Continuous Learning",
+      "Delay": 1600
+    },
+    {
+      "Name": "Problem Solving",
+      "Delay": 1700
+    }
+  ],
   "Contact.Title": "Say Hi!",
   "Contact.Content": "I'll be happy to hear from you if you'd like to talk about new opportunities. Message me, and I'll respond as soon as I see it.",
   "Contact.Btn": "Contact me"
