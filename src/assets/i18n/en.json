@@ -154,7 +154,7 @@
   "FeatureProjects.Projects": [
     {
       "Title": "Multisoluciones S.A.S",
-      "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability.",
+      "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visit preview</a>",
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.png"
       ],

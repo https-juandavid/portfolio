@@ -154,7 +154,7 @@
   "FeatureProjects.Projects": [
     {
       "Title": "Multisoluciones S.A.S",
-      "Description": "Participé como responsable del <span class='underline'>diseño y desarrollo</span> de la interfaz web corporativa, creando una experiencia de usuario moderna, accesible y alineada con la <span class='underline'>identidad de marca</span> de la empresa. Implementé componentes reutilizables, validación de formularios y una estructura escalable orientada a rendimiento y mantenibilidad.",
+      "Description": "Participé como responsable del <span class='underline'>diseño y desarrollo</span> de la interfaz web corporativa, creando una experiencia de usuario moderna, accesible y alineada con la <span class='underline'>identidad de marca</span> de la empresa. Implementé componentes reutilizables, validación de formularios y una estructura escalable orientada a rendimiento y mantenibilidad. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visitar vista previa</a>",
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.png"
       ],
