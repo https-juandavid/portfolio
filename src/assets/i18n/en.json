@@ -13,7 +13,7 @@
   "Banner.Name": "Juan David Contreras",
   "Banner.Subtitle": "Fullstack Developer",
   "Banner.Tagline": "ERP systems, automation and AI",
-  "Banner.Description": "I understand the business, pinpoint my client\u0027s problem and pain points, and turn them into end-to-end solutions such as ERPs, DIAN electronic invoicing and real-time plant monitoring.",
+  "Banner.Description": "I understand <span class='kw'>the business</span>, pinpoint my client's problem and <span class='kw'>pain points</span>, and turn them into <span class='kw'>end-to-end solutions</span> such as ERPs, AI-automated CRMs, DIAN electronic invoicing and real-time plant monitoring.",
   "Banner.ActionBtn": "Get in touch",
 
   "AboutMe.Title": "About me",

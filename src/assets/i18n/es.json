@@ -13,7 +13,7 @@
   "Banner.Name": "Juan David Contreras",
   "Banner.Subtitle": "Desarrollador Fullstack",
   "Banner.Tagline": "Sistemas ERP, automatización e IA",
-  "Banner.Description": "Entiendo el negocio, identifico el problema y el dolor de mi cliente, y lo traduzco a soluciones integrales como ERPs, facturación electrónica DIAN y monitoreo de planta en tiempo real.",
+  "Banner.Description": "Entiendo <span class='kw'>el negocio</span>, identifico el problema y <span class='kw'>el dolor de mi cliente</span>, y lo traduzco a <span class='kw'>soluciones integrales</span> como ERPs, CRMs automatizados con IA, facturación electrónica DIAN y monitoreo de planta en tiempo real.",
   "Banner.ActionBtn": "Escríbeme",
 
   "AboutMe.Title": "Acerca de mí",
