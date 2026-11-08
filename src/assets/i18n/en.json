@@ -4,100 +4,113 @@
   "Header.Item3": "Skills",
   "Header.Item4": "Projects",
   "Header.Item5": "Contact",
-  "Header.cvBtn": "Resume",
+  "Header.Item6": "Education & awards",
+  "Header.cvBtn": "Resume",
   "Header.cvName": "CV_Juan_Contreras_English.pdf",
   "Loading": "Loading...",
 
   "Banner.Pretitle": "Hi! My name is",
   "Banner.Name": "Juan David Contreras",
-  "Banner.Subtitle": "Software Developer",
-  "Banner.Description": "I have <span class='underline'>+2 years of experience</span> developing systems, interfaces, automations, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code with <span class='underline'>Node.js</span> and <span class='underline'>.NET</span> tools, applying best practices and development standards.",
-  "Banner.ActionBtn": "Contact me",
+  "Banner.Subtitle": "Fullstack Developer · ERP systems, automation and AI",
+  "Banner.Description": "Right now I'm building <span class='underline'>real-time production floor monitoring</span> for a textile factory, integrated into its ERP. Before that I worked on <span class='underline'>DIAN</span> electronic invoicing (Colombia's tax authority) and on accounting and inventory ERPs with <span class='underline'>.NET</span>.",
+  "Banner.ActionBtn": "Get in touch",
 
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
-    "Over <span class='underline'>+2 years of experience</span>, I have covered roles as: <span class='underline'>backend developer</span>, <span class='underline'>frontend developer</span>, and <span class='underline'>automation analyst</span>. I love contributing my knowledge to create new things that help solve problems.",
-    "Throughout my career, I have acquired skills that allow me to optimize processes and workflows by integrating <span class='underline'>AI Agents</span>, <span class='underline'>MCP Servers</span>, and <span class='underline'>Automations</span> to streamline task development, as well as those of my team. My focus is not only on speed, but on applying AI in a <span class='underline'>secure</span>, <span class='underline'>efficient</span>, and <span class='underline'>scalable</span> way, standardizing patterns that allow the project to progress in an agile, organized manner with a solid foundation.",
-    "Some of the technologies I have been trained in and worked with include (but are not limited to):"
+    "I've worked as a fullstack developer for over two years with <span class='underline'>.NET (C#)</span>, <span class='underline'>Angular</span>, <span class='underline'>NestJS</span> and <span class='underline'>React</span>. Most of what I've built are internal business systems: ERPs, electronic invoicing and automations.",
+    "At <span class='underline'>Klixmant</span>, a Colombian apparel factory, I gather requirements alongside an industrial engineer who comes to the plant to measure cycle times, efficiency percentages and operating coefficients. With those formulas I built real-time production floor monitoring, integrated into the company's ERP, which now tracks <span class='underline'>7 production processes and 15 operators</span>. I also built the WhatsApp chatbot sales reps use to log around <span class='underline'>500 sales a month</span>; each order is validated and passed to Effi ERP to start the production order.",
+    "Every project starts with recurring meetings with management. That produces a <span class='underline'>PRD</span> management signs off on; I turn it into a spec with <span class='underline'>OpenSpec</span> and implement it with AI agents (<span class='underline'>Claude Code</span> and <span class='underline'>OpenCode</span>). Since we started working this way, requirement rework has dropped by <span class='underline'>50%</span>.",
+    "These are the technologies I use day to day:"
   ],
   "AboutMe.Skills": [
     {
-      "Name": "HTML & (S)CSS",
+      "Name": "Angular",
       "Delay": 1000
     },
     {
-      "Name": "Angular",
+      "Name": "React + Next.js",
       "Delay": 1100
     },
     {
-      "Name": "RxJS",
+      "Name": "TypeScript",
       "Delay": 1200
     },
     {
-      "Name": "React + NextJS",
+      "Name": "RxJS",
       "Delay": 1300
     },
     {
-      "Name": "NestJS",
+      "Name": ".NET (C#)",
       "Delay": 1400
     },
     {
-      "Name": "Express",
+      "Name": "NestJS",
       "Delay": 1500
     },
     {
-      "Name": "N8N",
+      "Name": "Node.js",
       "Delay": 1600
     },
     {
-      "Name": "LLMs ",
-      "Delay": 1650
-    },
-    {
-      "Name": "MCP",
-      "Delay": 1660
-    },
-    {
-      "Name": "SQL",
+      "Name": "Entity Framework / Prisma",
       "Delay": 1700
     },
     {
-      "Name": ".NET",
+      "Name": "SQL Server / PostgreSQL",
       "Delay": 1800
     },
     {
-      "Name": "Entity Framework",
+      "Name": "MySQL / MongoDB",
       "Delay": 1900
     },
     {
-      "Name": "Linux",
+      "Name": "n8n",
       "Delay": 2000
     },
     {
-      "Name": "Docker",
+      "Name": "LLMs and agents",
       "Delay": 2100
     },
     {
-      "Name": "EasyPanel",
+      "Name": "MCP",
       "Delay": 2200
     },
     {
-      "Name": "Contabo",
+      "Name": "Claude Code",
       "Delay": 2300
+    },
+    {
+      "Name": "Docker",
+      "Delay": 2400
+    },
+    {
+      "Name": "Linux",
+      "Delay": 2500
     }
   ],
 
   "Experience.Title": "Experience",
   "Experience.Jobs": [
     {
-      "Tab": "M.S.S",
-      "Title": "Digital Identity Manager & Web Development",
-      "Date": "November 2025 - Present",
+      "Tab": "Klixmant",
+      "Title": "Fullstack Developer · AI Development Lead",
+      "Date": "July 2026 - Present",
       "Description": [
-        "Comprehensive management and implementation of the <span class='underline'>digital identity</span> for <span class='underline'>Multisoluciones S.A.S</span>, defining branding guidelines, online presence, and visual consistency.",
-        "Design and development of the <span class='underline'>corporate website</span> optimized for <span class='underline'>SEO</span>, with clear information architecture and a responsive <span class='underline'>UX/UI</span> experience.",
-        "Building and deployment of the web platform in a production environment, applying <span class='underline'>performance</span>, accessibility, and scalability best practices.",
-        "Definition of the <span class='underline'>color palette</span>, logo, and graphic guidelines oriented towards digital positioning and brand strengthening."
+        "I gather the requirements for the efficiency system alongside the industrial engineer who measures cycle times, efficiency percentages and operating coefficients on the plant floor, and turn them into ERP rules.",
+        "I built <span class='underline'>real-time production floor monitoring</span>, integrated into the company's own ERP. It calculates efficiency, textile coefficients and cycle times for <span class='underline'>7 production processes and 15 operators</span>, with Next.js, TypeScript, Prisma and MySQL.",
+        "I developed the WhatsApp chatbot (WhatsApp Business API and n8n) that commissioned sales reps use to log around <span class='underline'>500 sales a month</span>. It validates each order, creates the delivery note and syncs the company ERP with Effi ERP to trigger the production order.",
+        "With that chatbot, sales loading, logistics updates and shipping guide management are <span class='underline'>60% more efficient</span>.",
+        "I lead the AI development workflow: recurring meetings with management, a PRD management signs off on, the spec in OpenSpec and implementation with agents (Claude Code and OpenCode). Requirement rework <span class='underline'>dropped by 50%</span>."
+      ]
+    },
+    {
+      "Tab": "M.S.S",
+      "Title": "Digital Identity Manager and Web Developer",
+      "Date": "November 2025 - June 2026",
+      "Description": [
+        "I designed and built the <span class='underline'>Multisoluciones S.A.S</span> website with React, Radix UI, TailwindCSS and Zod, and deployed it to production.",
+        "I defined the brand identity: logo, color palette and visual guidelines.",
+        "I organized the site's information architecture with SEO in mind and so it looks right on both phone and desktop."
       ]
     },
     {
@@ -105,46 +118,42 @@
       "Title": "Fullstack Developer",
       "Date": "May 2025 - November 2025",
       "Description": [
-        "Development and maintenance of a platform for managing and issuing electronic documents to the <span class='underline'>DIAN</span>.",
-        "Creation and implementation of modules with complex reactive forms.",
-        "Backend API coding using <span class='underline'>NestJS</span>.",
-        "Frontend API request coding using <span class='underline'>RxJS</span> within <span class='underline'>Angular</span>.",
-        "Automated testing coding, both unit and E2E.",
-        "Participation in technical and architectural decision-making for the project."
+        "I built modules for a platform that issues and manages electronic documents with the <span class='underline'>DIAN</span>, Colombia's tax authority, using <span class='underline'>Angular</span> on the frontend and <span class='underline'>NestJS</span> on the backend.",
+        "I built complex reactive forms and the API layer with <span class='underline'>RxJS</span>.",
+        "I refactored backend services and endpoint consumption to improve response times in high-volume operations.",
+        "I wrote unit and E2E tests and took part in the project's technical and architecture decisions."
       ]
     },
     {
       "Tab": "ClonAI",
-      "Title": "Fullstack Developer & Automation Analyst",
+      "Title": "AI Developer and Implementer",
       "Date": "February 2025 - May 2025",
       "Description": [
-        "Participation in design and architecture meetings for a chatbot management platform powered by LLMs.",
-        "Analysis, design, and implementation of automated workflows using <span class='underline'>N8N</span> and <span class='underline'>LLMs</span>.",
-        "Refactoring legacy code and ensuring dependency compatibility during updates, along with regular <span class='underline'>Angular</span> version upgrades."
+        "I met with client companies to understand their operations and adapt the chatbot platform to what each one needed, from diagnosis to launch.",
+        "I designed <span class='underline'>LLM</span> and agent workflows in <span class='underline'>n8n</span>, including WhatsApp integration and audio processing.",
+        "I maintained the <span class='underline'>Angular</span> frontend: refactored old code and upgraded versions while keeping every dependency compatible."
       ]
     },
-
     {
       "Tab": "Schein",
-      "Title": "Fullstack Web Developer",
+      "Title": "Fullstack .NET Developer",
       "Date": "October 2024 - February 2025",
       "Description": [
-        "Developing and maintaining an ERP business management platform for accounting, inventory, customers, and suppliers, built with Blazor, <span class='underline'>.NET</span>, and <span class='underline'>SQL Server</span>.",
-        "Analysis and development of the help desk module for internal management of support tickets in different areas of our client's company.",
-        "Refactoring legacy code and optimizing application deployment times.",
-        "Coding API requests using <span class='underline'>.NET</span> libraries and <span class='underline'>EntityFramework</span>.",
-        "Refactoring code and applying <span class='underline'>LINQ</span> queries to optimize data loading times."
+        "I built and maintained a client's ERP (accounting, inventory, customers and suppliers) with Blazor, <span class='underline'>.NET</span> and <span class='underline'>SQL Server</span>.",
+        "I built the help desk module the client's departments use to manage internal support tickets.",
+        "I optimized SQL and <span class='underline'>LINQ</span> queries with Entity Framework to speed up statistical reports and data loading.",
+        "I refactored legacy code and cut the application's deployment times."
       ]
     },
     {
       "Tab": "Campuslands",
-      "Title": "Trainee Fullstack Developer",
-      "Date": "March 2023 - October 2024",
+      "Title": "Fullstack Developer Trainee",
+      "Date": "March 2023 - February 2024",
       "Description": [
-        "During more than <span class='underline'>2100 hours</span> of intensive in-person training, I immersed myself in web development, English, and soft skills. This process marked my entry into the tech world and provided the foundations for writing professional code, working in teams, and tackling real challenges in development environments.",
-        "Applied best practices and design patterns in practical projects, working on the backend with <span class='underline'>.NET</span> and <span class='underline'>MySQL</span>, and self-teaching frontend development with <span class='underline'>Angular</span>.",
-        "Participated in requirements analysis, planning, and database design as part of the solution-building process.",
-        "Developed APIs with <span class='underline'>.NET</span> and <span class='underline'>EntityFramework</span> as part of the project backends."
+        "I completed <span class='underline'>2,100 hours</span> of in-person training in web development, English and soft skills. That's where I learned to code professionally and work on a team.",
+        "I built APIs with <span class='underline'>.NET</span>, Entity Framework and MySQL applying design patterns, and taught myself <span class='underline'>Angular</span> to build the frontend.",
+        "I took part in requirements analysis, planning and database design for the projects.",
+        "Between February and October 2024 I kept practicing what I learned in the program while job hunting; in October I joined Schein."
       ]
     }
   ],
@@ -152,6 +161,42 @@
   "FeatureProjects.Title": "My projects",
   "FeatureProjects.Label": "Featured Project",
   "FeatureProjects.Projects": [
+    {
+      "Title": "Plant efficiency monitoring · Klixmant",
+      "Description": "The plant had no efficiency measurement at all. An industrial engineer comes in to measure cycle times, efficiency percentages and operating coefficients using standard textile industry formulas. I gathered the requirements with him, turned those formulas into business rules and built the module inside the company's <span class='underline'>ERP</span>. For the first time, the plant sees its efficiency, textile coefficients and cycle times for <span class='underline'>7 production processes and 15 operators</span> in real time. It's an internal system, so there's no public link.",
+      "imgs": [],
+      "Technologies": [
+        "Next.js",
+        "TypeScript",
+        "Prisma",
+        "MySQL"
+      ],
+      "Link": ""
+    },
+
+    {
+      "Title": "WhatsApp sales chatbot · Klixmant",
+      "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp: the bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a month</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
+      "imgs": [],
+      "Technologies": [
+        "WhatsApp Business API",
+        "n8n",
+        "Effi ERP"
+      ],
+      "Link": ""
+    },
+
+    {
+      "Title": "Steelfall · Global Game Jam 2026",
+      "Description": "Steelfall won <span class='underline'>1st place</span> at the Bucaramanga site of Global Game Jam 2026. We built it in 48 hours in Unity; I programmed the enemy mechanics and the UI in C# together with a team. My name is on the game's official page. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' class='underline'>View on Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' class='underline'>Play on itch.io</a>",
+      "imgs": [],
+      "Technologies": [
+        "Unity",
+        "C#"
+      ],
+      "Link": "https://itch.io/jam/global-game-jam-colombia2026/rate/4252496"
+    },
+
     {
       "Title": "Multisoluciones S.A.S",
       "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visit preview</a>",
@@ -190,50 +235,113 @@
     }
   ],
 
+  "Education.Title": "Education & awards",
+  "Education.StudiesLabel": "Education",
+  "Education.Studies": [
+    {
+      "Title": "Systems Engineering",
+      "Place": "Unidades Tecnológicas de Santander (UTS)",
+      "Date": "In progress",
+      "Description": "I study it while working at Klixmant."
+    },
+    {
+      "Title": "Technical Degree in Software Development",
+      "Place": "Campuslands",
+      "Date": "March 2023 - February 2024",
+      "Description": "2,100 hours of in-person training in web development, English and soft skills."
+    }
+  ],
+  "Education.CertificationsLabel": "Certifications",
+  "Education.Certifications": [
+    {
+      "Title": "Angular: De cero a experto",
+      "Issuer": "Fernando Herrera (DevTalles) · Udemy",
+      "Date": "February 2026",
+      "Link": "https://www.udemy.com/certificate/UC-0187e821-ff36-4c4a-ab81-7ff0335605d8/"
+    },
+    {
+      "Title": "Nest: Desarrollo backend escalable con Node",
+      "Issuer": "Fernando Herrera (DevTalles) · Udemy",
+      "Date": "February 2026",
+      "Link": "https://www.udemy.com/certificate/UC-40f1e09e-2134-4e37-8ed5-02b824ef71d7/"
+    },
+    {
+      "Title": "Responsive Web Design",
+      "Issuer": "freeCodeCamp",
+      "Date": "August 2024",
+      "Link": "https://www.freecodecamp.org/certification/fcc75d29dff-7cd0-44c2-be6c-d1cb938e956b/responsive-web-design"
+    },
+    {
+      "Title": "Foundational C# with Microsoft",
+      "Issuer": "freeCodeCamp · Microsoft",
+      "Date": "May 2024",
+      "Link": "https://www.freecodecamp.org/certification/fcc75d29dff-7cd0-44c2-be6c-d1cb938e956b/foundational-c-sharp-with-microsoft"
+    },
+    {
+      "Title": "Aprende Lenguaje C# de cero a experto",
+      "Issuer": "Portal Ingeniería · Udemy",
+      "Date": "August 2023",
+      "Link": "https://www.udemy.com/certificate/UC-227c09ff-9ec5-4117-b824-3899a13c0b0e/"
+    }
+  ],
+  "Education.AchievementsLabel": "Awards",
+  "Education.Achievements": [
+    {
+      "Title": "1st place as a developer",
+      "Place": "Global Game Jam 2026, Bucaramanga site",
+      "Description": "With Steelfall, built in Unity in 48 hours. I programmed the enemy mechanics and the UI in C# together with a team.",
+      "Link": "https://globalgamejam.org/games/2026/steelfall-4",
+      "LinkText": "See the game"
+    }
+  ],
+  "Education.LanguagesLabel": "Languages",
+  "Education.Languages": "Spanish (native) · English (B2)",
+  "Education.VerifyText": "View certificate",
+
   "Contact.Pretitle": "And... Now?",
 
   "SoftSkills.Title": "Soft Skills",
   "SoftSkills.Description": [
-    "Throughout my professional career, I have developed a solid capacity for <span class='underline'>strategic communication</span>, allowing me to translate business needs into clear and executable technical solutions.",
-    "I am characterized by an <span class='underline'>analytical mindset</span> and a strong <span class='underline'>results orientation</span>, always keeping in mind the efficiency, scalability, and quality of every project I contribute to.",
-    "I apply the <span class='underline'>Kaizen</span> principle in both my personal and professional life, focusing on <span class='underline'>continuous improvement</span> through small sustained advances, which allows me to constantly and strategically optimize processes.",
-    "I have had the opportunity to work in multidisciplinary teams, environments that have taught me valuable skills such as:"
+    "I turn what the business needs into something that can be built. At <span class='underline'>Klixmant</span> I do it with management and Industrial Engineering; at <span class='underline'>ClonAI</span> I did it directly with client companies, from diagnosis to launch.",
+    "In my personal life and at work I apply <span class='underline'>Kaizen</span>: improve a little at a time and keep it up. That's how I spent the months between Campuslands and my first job, polishing what I had learned while I looked for work.",
+    "I like being able to measure whether what I built actually helped.",
+    "I've worked with management, industrial engineers, clients and development teams. These are the skills I take from that:"
   ],
   "SoftSkills.Skills": [
     {
-      "Name": "Self-management",
+      "Name": "Requirements gathering",
       "Delay": 1000
     },
     {
-      "Name": "Teamwork",
+      "Name": "Communication with management and clients",
       "Delay": 1100
     },
     {
-      "Name": "Professional Responsibility",
+      "Name": "Cross-team work",
       "Delay": 1200
     },
     {
-      "Name": "Time Management",
+      "Name": "Self-management",
       "Delay": 1300
     },
     {
-      "Name": "Critical Thinking",
+      "Name": "Continuous learning",
       "Delay": 1400
     },
     {
-      "Name": "Adaptability",
+      "Name": "Problem solving",
       "Delay": 1500
     },
     {
-      "Name": "Continuous Learning",
+      "Name": "Teamwork",
       "Delay": 1600
     },
     {
-      "Name": "Problem Solving",
+      "Name": "Adaptability",
       "Delay": 1700
     }
   ],
   "Contact.Title": "Say Hi!",
-  "Contact.Content": "I'll be happy to hear from you if you'd like to talk about new opportunities. Message me, and I'll respond as soon as I see it.",
-  "Contact.Btn": "Contact me"
+  "Contact.Content": "If you think what I do could help your team or your project, write to me. I'll reply as soon as I see your message.",
+  "Contact.Btn": "Get in touch"
 }
