@@ -18,7 +18,7 @@
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
     "I've worked as a fullstack developer for over two years with <span class='underline'>.NET (C#)</span>, <span class='underline'>Angular</span>, <span class='underline'>NestJS</span> and <span class='underline'>React</span>. Most of what I've built are internal business systems: ERPs, electronic invoicing and automations.",
-    "At <span class='underline'>Klixmant</span>, a Colombian apparel factory, I gather requirements alongside an industrial engineer who comes to the plant to measure cycle times, efficiency percentages and operating coefficients. With those formulas I built real-time production floor monitoring, integrated into the company's ERP, which now tracks <span class='underline'>7 production processes and 15 operators</span>. I also built the WhatsApp chatbot sales reps use to log around <span class='underline'>500 sales a month</span>; each order is validated and passed to Effi ERP to start the production order.",
+    "At <span class='underline'>Klixmant</span>, a Colombian apparel factory, I gather requirements alongside an industrial engineer who comes to the plant to measure cycle times, efficiency percentages and operating coefficients. With those formulas I built real-time production floor monitoring, integrated into the company's ERP, which now tracks <span class='underline'>7 production processes and 15 operators</span>. I also built the WhatsApp chatbot sales reps use to log around <span class='underline'>500 sales a week</span>; each order is validated and passed to Effi ERP to start the production order.",
     "Every project starts with recurring meetings with management. That produces a <span class='underline'>PRD</span> management signs off on; I turn it into a spec with <span class='underline'>OpenSpec</span> and implement it with AI agents (<span class='underline'>Claude Code</span> and <span class='underline'>OpenCode</span>). Since we started working this way, requirement rework has dropped by <span class='underline'>50%</span>.",
     "These are the technologies I use day to day:"
   ],
@@ -98,7 +98,7 @@
       "Description": [
         "I gather the requirements for the efficiency system alongside the industrial engineer who measures cycle times, efficiency percentages and operating coefficients on the plant floor, and turn them into ERP rules.",
         "I built <span class='underline'>real-time production floor monitoring</span>, integrated into the company's own ERP. It calculates efficiency, textile coefficients and cycle times for <span class='underline'>7 production processes and 15 operators</span>, with Next.js, TypeScript, Prisma and MySQL.",
-        "I developed the WhatsApp chatbot (WhatsApp Business API and n8n) that commissioned sales reps use to log around <span class='underline'>500 sales a month</span>. It validates each order, creates the delivery note and syncs the company ERP with Effi ERP to trigger the production order.",
+        "I developed the WhatsApp chatbot (WhatsApp Business API and n8n) that commissioned sales reps use to log around <span class='underline'>500 sales a week</span>. It validates each order, creates the delivery note and syncs the company ERP with Effi ERP to trigger the production order.",
         "With that chatbot, sales loading, logistics updates and shipping guide management are <span class='underline'>60% more efficient</span>.",
         "I lead the AI development workflow: recurring meetings with management, a PRD management signs off on, the spec in OpenSpec and implementation with agents (Claude Code and OpenCode). Requirement rework <span class='underline'>dropped by 50%</span>."
       ]
@@ -176,7 +176,7 @@
 
     {
       "Title": "WhatsApp sales chatbot · Klixmant",
-      "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp: the bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a month</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
+      "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp: the bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a week</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
       "imgs": [],
       "Technologies": [
         "WhatsApp Business API",

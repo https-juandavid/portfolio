@@ -18,7 +18,7 @@
   "AboutMe.Title": "Acerca de mí",
   "AboutMe.Paragraphs": [
     "Llevo más de dos años como desarrollador fullstack con <span class='underline'>.NET (C#)</span>, <span class='underline'>Angular</span>, <span class='underline'>NestJS</span> y <span class='underline'>React</span>. Casi todo lo que he construido son sistemas internos de empresas: ERPs, facturación electrónica y automatizaciones.",
-    "En <span class='underline'>Klixmant</span>, una fábrica de confección colombiana, levanto los requerimientos de la mano de un ingeniero industrial que viene a la planta a medir tiempos, porcentajes de eficiencia y coeficientes operativos. Con sus fórmulas construí el monitoreo en planta de fabricación en tiempo real, integrado al ERP de la empresa, que hoy mide <span class='underline'>7 procesos productivos y 15 operarios</span>. También hice el chatbot de WhatsApp por el que los vendedores cargan unas <span class='underline'>500 ventas al mes</span>; cada pedido se valida y pasa a Effi ERP para iniciar la orden de producción.",
+    "En <span class='underline'>Klixmant</span>, una fábrica de confección colombiana, levanto los requerimientos de la mano de un ingeniero industrial que viene a la planta a medir tiempos, porcentajes de eficiencia y coeficientes operativos. Con sus fórmulas construí el monitoreo en planta de fabricación en tiempo real, integrado al ERP de la empresa, que hoy mide <span class='underline'>7 procesos productivos y 15 operarios</span>. También hice el chatbot de WhatsApp por el que los vendedores cargan unas <span class='underline'>500 ventas a la semana</span>; cada pedido se valida y pasa a Effi ERP para iniciar la orden de producción.",
     "Cada desarrollo empieza en reuniones periódicas con gerencia. De ahí sale un <span class='underline'>PRD</span> que gerencia valida, lo convierto en especificación con <span class='underline'>OpenSpec</span> y lo implemento con agentes de IA (<span class='underline'>Claude Code</span> y <span class='underline'>OpenCode</span>). Desde que trabajamos así, los retrabajos en requerimientos bajaron un <span class='underline'>50%</span>.",
     "Estas son las tecnologías que uso en el día a día:"
   ],
@@ -98,7 +98,7 @@
       "Description": [
         "Levanto los requerimientos del sistema de eficiencia junto al ingeniero industrial que mide tiempos, porcentajes de eficiencia y coeficientes operativos en la planta, y los convierto en reglas del ERP.",
         "Construí el <span class='underline'>monitoreo en planta de fabricación en tiempo real</span>, integrado al ERP propio. Calcula la eficiencia, los coeficientes textiles y los tiempos de ciclo para <span class='underline'>7 procesos productivos y 15 operarios</span>, con Next.js, TypeScript, Prisma y MySQL.",
-        "Desarrollé el chatbot de WhatsApp (WhatsApp Business API y n8n) por el que los vendedores comisionistas cargan unas <span class='underline'>500 ventas al mes</span>. Valida cada pedido, crea la remisión y sincroniza el ERP propio con Effi ERP para disparar la orden de producción.",
+        "Desarrollé el chatbot de WhatsApp (WhatsApp Business API y n8n) por el que los vendedores comisionistas cargan unas <span class='underline'>500 ventas a la semana</span>. Valida cada pedido, crea la remisión y sincroniza el ERP propio con Effi ERP para disparar la orden de producción.",
         "Con ese chatbot, el cargue de ventas, las novedades logísticas y la gestión de guías de transporte son un <span class='underline'>60% más eficientes</span>.",
         "Lidero el flujo de desarrollo con IA: reuniones periódicas con gerencia, un PRD que gerencia valida, la especificación en OpenSpec y la implementación con agentes (Claude Code y OpenCode). Los retrabajos en requerimientos <span class='underline'>bajaron un 50%</span>."
       ]
@@ -176,7 +176,7 @@
 
     {
       "Title": "Chatbot de ventas por WhatsApp · Klixmant",
-      "Description": "Los vendedores comisionistas cargaban cada venta llenando un formulario largo y denso en el ERP, o la mandaban por WhatsApp a una persona que todas las mañanas las subía a mano. Ahora la cargan ellos mismos por WhatsApp: el bot valida el pedido, crea la remisión y sincroniza el ERP propio con <span class='underline'>Effi ERP</span> para que arranque la orden de producción. Procesa unas <span class='underline'>500 ventas al mes</span>, y el cargue de ventas, las novedades logísticas y las guías de transporte son un <span class='underline'>60% más eficientes</span>.",
+      "Description": "Los vendedores comisionistas cargaban cada venta llenando un formulario largo y denso en el ERP, o la mandaban por WhatsApp a una persona que todas las mañanas las subía a mano. Ahora la cargan ellos mismos por WhatsApp: el bot valida el pedido, crea la remisión y sincroniza el ERP propio con <span class='underline'>Effi ERP</span> para que arranque la orden de producción. Procesa unas <span class='underline'>500 ventas a la semana</span>, y el cargue de ventas, las novedades logísticas y las guías de transporte son un <span class='underline'>60% más eficientes</span>.",
       "imgs": [],
       "Technologies": [
         "WhatsApp Business API",
