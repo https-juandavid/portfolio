@@ -5,7 +5,6 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { UntypedFormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
 
-
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -24,9 +23,6 @@ import { LanguageService } from 'src/app/services/language/language.service';
     ],
     standalone: false
 })
-
-
-
 export class HeaderComponent implements OnInit {
 
   responsiveMenuVisible: Boolean = false;

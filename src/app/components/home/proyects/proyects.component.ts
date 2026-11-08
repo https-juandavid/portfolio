@@ -20,6 +20,13 @@ export class ProyectsComponent implements OnInit {
     autoplayTimeout: 3000,
   };
 
+  // Owl clones slides to loop; with a single image that produces duplicated track keys (NG0955).
+  singleImageOptions: OwlOptions = {
+    ...this.customOptions,
+    loop: false,
+    autoplay: false,
+  };
+
   @ViewChild('imgContainer') imgContainer: ElementRef;
 
   constructor(public analyticsService: AnalyticsService) {}

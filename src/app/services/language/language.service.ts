@@ -16,8 +16,15 @@ export class LanguageService {
 
   initLanguage(){
     this.translateService.addLangs(["en", "es"])
-    let language = navigator.language || (navigator as any).userLanguage;
-    language = language.split("-").includes("es") ? "es" : "en"
+    // A language in the URL (e.g. a shared juandavid.cv/en link) wins over the browser language.
+    const urlLanguage = this.location.path().split("/").filter(Boolean)[0]
+    let language: "es" | "en"
+    if (urlLanguage === "es" || urlLanguage === "en") {
+      language = urlLanguage
+    } else {
+      const browserLanguage: string = navigator.language || (navigator as any).userLanguage || ""
+      language = browserLanguage.split("-").includes("es") ? "es" : "en"
+    }
     this.translateService.setDefaultLang(language)
 
     // Change the URL without navigate:

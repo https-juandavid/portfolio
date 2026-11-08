@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import Lenis from 'lenis';
-import { Title, Meta } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import {LanguageService} from "src/app/services/language/language.service"
 import { Location } from '@angular/common';
@@ -20,8 +19,6 @@ export class AppComponent implements OnInit, OnDestroy{
   private lenis: Lenis;
 
   constructor(
-    private titleService: Title,
-    private metaService: Meta,
     private translateService: TranslateService,
     private location: Location,
     private languageService: LanguageService,
@@ -33,12 +30,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle( "Juan David Contreras | Software Developer" );
-
-    this.metaService.addTags([
-      {name: 'keywords', content: 'Software, developer, frontend'},
-      {name: 'description', content: 'Con 4 años de experiencia desarrollando sistemas, interfaces, bots y soluciones tecnológicas  para hacer de la web un lugar mejor. En mi trabajo me gusta liderar, proponer y ejecutar ideas, escribir y refactorizar código limpio, reutilizable y escalable.'},
-    ]);
+    // Title and meta description live in src/index.html (single source for SEO/social previews).
 
     // Inicializar partículas globales después de un breve delay
     setTimeout(() => {
