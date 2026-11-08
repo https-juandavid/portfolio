@@ -105,6 +105,15 @@
                     font-size: 20px;
                     line-height: 1.5;
                 }
+
+                .banner-tagline {
+                    max-width: none;
+                    margin: 18px 0 0;
+                    font-family: $CodeFont;
+                    font-size: 16px;
+                    letter-spacing: 0.04em;
+                    color: $Green;
+                }
             }
 
             .div-btn-banner{

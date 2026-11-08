@@ -11,7 +11,8 @@
 
   "Banner.Pretitle": "Hi! My name is",
   "Banner.Name": "Juan David Contreras",
-  "Banner.Subtitle": "Fullstack Developer · ERP systems, automation and AI",
+  "Banner.Subtitle": "Fullstack Developer",
+  "Banner.Tagline": "ERP systems, automation and AI",
   "Banner.Description": "Right now I'm building <span class='underline'>real-time production floor monitoring</span> for a textile factory, integrated into its ERP. Before that I worked on <span class='underline'>DIAN</span> electronic invoicing (Colombia's tax authority) and on accounting and inventory ERPs with <span class='underline'>.NET</span>.",
   "Banner.ActionBtn": "Get in touch",
 

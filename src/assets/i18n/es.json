@@ -11,7 +11,8 @@
 
   "Banner.Pretitle": "¡Hola! Mi nombre es",
   "Banner.Name": "Juan David Contreras",
-  "Banner.Subtitle": "Desarrollador Fullstack · Sistemas ERP, automatización e IA",
+  "Banner.Subtitle": "Desarrollador Fullstack",
+  "Banner.Tagline": "Sistemas ERP, automatización e IA",
   "Banner.Description": "Hoy desarrollo el <span class='underline'>monitoreo en planta de fabricación en tiempo real</span> de una fábrica textil, integrado a su ERP. Antes trabajé en facturación electrónica <span class='underline'>DIAN</span> y en ERPs de contabilidad e inventarios con <span class='underline'>.NET</span>.",
   "Banner.ActionBtn": "Escríbeme",
 
