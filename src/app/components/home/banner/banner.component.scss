@@ -114,6 +114,15 @@
                     letter-spacing: 0.04em;
                     color: $Green;
                 }
+
+                .banner-lead {
+                    max-width: 620px;
+                    margin: 22px 0 0;
+                    font-family: $MainFont;
+                    font-size: 20px;
+                    line-height: 1.55;
+                    color: $Slate;
+                }
             }
 
             .div-btn-banner{
