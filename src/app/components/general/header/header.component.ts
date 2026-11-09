@@ -25,7 +25,16 @@ import { LanguageService } from 'src/app/services/language/language.service';
 })
 export class HeaderComponent implements OnInit {
 
-  responsiveMenuVisible: Boolean = false;
+  /** Section links, shared by the desktop and mobile menus (numbers follow the order). */
+  readonly navItems: { id: string; label: string; event: string }[] = [
+    { id: 'about', label: 'Header.Item1', event: 'click_about' },
+    { id: 'jobs', label: 'Header.Item2', event: 'click_experience' },
+    { id: 'education', label: 'Header.Item6', event: 'click_education' },
+    { id: 'soft-skills', label: 'Header.Item3', event: 'click_skills' },
+    { id: 'proyects', label: 'Header.Item4', event: 'click_projects' },
+  ];
+
+  responsiveMenuVisible: boolean = false;
   pageYPosition: number;
   languageFormControl: UntypedFormControl= new UntypedFormControl();
   cvName: string = "";
@@ -42,6 +51,22 @@ export class HeaderComponent implements OnInit {
 
     this.languageFormControl.setValue(this.languageService.language)
 
+  }
+
+  onNavClick(item: { id: string; event: string }): void {
+    this.analyticsService.sendAnalyticEvent(item.event, 'menu', 'click');
+    this.scroll(item.id);
+  }
+
+  toggleMenu(): void {
+    this.responsiveMenuVisible = !this.responsiveMenuVisible;
+  }
+
+  /** Brand logo: stay on the current language and go back to the top. */
+  goHome(event: Event): void {
+    event.preventDefault();
+    this.responsiveMenuVisible = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   scroll(el) {
