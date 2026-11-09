@@ -156,7 +156,7 @@
         "Hice <span class='underline'>2.100 horas</span> de formación presencial en desarrollo web, inglés y habilidades blandas. Ahí aprendí a programar de forma profesional y a trabajar en equipo.",
         "Construí APIs con <span class='underline'>.NET</span>, Entity Framework y MySQL aplicando patrones de diseño, y aprendí <span class='underline'>Angular</span> por mi cuenta para hacer el frontend.",
         "Participé en el análisis de requerimientos, la planificación y el diseño de bases de datos de los proyectos.",
-        "Entre febrero y octubre de 2024 seguí practicando por mi cuenta lo que aprendí en la formación mientras buscaba trabajo; en octubre entré a Schein."
+        "Al terminar la formación seguí estudiando por mi cuenta y obtuve las certificaciones <span class='underline'>Foundational C# with Microsoft</span> (mayo 2024) y <span class='underline'>Responsive Web Design</span> (agosto 2024) antes de entrar a Schein en octubre de 2024."
       ]
     }
   ],
@@ -192,11 +192,11 @@
       "Title": "Steelfall · Global Game Jam 2026",
       "Description": "Steelfall ganó el <span class='underline'>1.er lugar</span> en la sede Bucaramanga de la Global Game Jam 2026. Lo hicimos en 48 horas en Unity; programé en C# junto a un equipo las mecánicas de los enemigos y la interfaz. Mi nombre aparece en la página oficial del juego. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' rel='noopener' class='underline'>Ver en Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' rel='noopener' class='underline'>Jugar en itch.io</a>",
       "imgs": [
+        "assets/images/steelfall/steelfall-premio.webp",
         "assets/images/steelfall/steelfall-gameplay.webp",
         "assets/images/steelfall/steelfall-mascara-buho.webp",
         "assets/images/steelfall/steelfall-intro.webp",
-        "assets/images/steelfall/steelfall-heroe.webp",
-        "assets/images/steelfall/steelfall-premio.webp"
+        "assets/images/steelfall/steelfall-heroe.webp"
       ],
       "Technologies": [
         "Unity",
@@ -311,8 +311,8 @@
   "SoftSkills.Title": "Habilidades Blandas",
   "SoftSkills.Description": [
     "Traduzco lo que necesita el negocio en algo que se pueda construir. En <span class='underline'>Klixmant</span> lo hago con gerencia y con Ingeniería Industrial; en <span class='underline'>ClonAI</span> lo hacía directamente con las empresas cliente, desde el diagnóstico hasta la puesta en marcha.",
-    "En lo personal y en el trabajo aplico <span class='underline'>Kaizen</span>: mejorar un poco cada vez y sostenerlo. Así usé los meses entre Campuslands y mi primer empleo, puliendo lo que había aprendido mientras buscaba trabajo.",
-    "Me gusta poder medir si lo que construí sirvió.",
+    "En lo personal y en el trabajo aplico <span class='underline'>Kaizen</span>: mejorar un poco cada día y sostenerlo en el tiempo.",
+    "Cada sistema que entrego tiene una forma de medir su impacto en la operación.",
     "He trabajado con gerencia, con ingenieros industriales, con clientes y con equipos de desarrollo. De ahí me quedan estas habilidades:"
   ],
   "SoftSkills.Skills": [

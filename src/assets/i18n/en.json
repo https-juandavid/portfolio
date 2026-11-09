@@ -156,7 +156,7 @@
         "I completed <span class='underline'>2,100 hours</span> of in-person training in web development, English and soft skills. That's where I learned to code professionally and work on a team.",
         "I built APIs with <span class='underline'>.NET</span>, Entity Framework and MySQL applying design patterns, and taught myself <span class='underline'>Angular</span> to build the frontend.",
         "I took part in requirements analysis, planning and database design for the projects.",
-        "Between February and October 2024 I kept practicing what I learned in the program while job hunting; in October I joined Schein."
+        "After the program I kept studying on my own and earned the <span class='underline'>Foundational C# with Microsoft</span> (May 2024) and <span class='underline'>Responsive Web Design</span> (August 2024) certifications before joining Schein in October 2024."
       ]
     }
   ],
@@ -192,11 +192,11 @@
       "Title": "Steelfall · Global Game Jam 2026",
       "Description": "Steelfall won <span class='underline'>1st place</span> at the Bucaramanga site of Global Game Jam 2026. We built it in 48 hours in Unity; I programmed the enemy mechanics and the UI in C# together with a team. My name is on the game's official page. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' rel='noopener' class='underline'>View on Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' rel='noopener' class='underline'>Play on itch.io</a>",
       "imgs": [
+        "assets/images/steelfall/steelfall-premio.webp",
         "assets/images/steelfall/steelfall-gameplay.webp",
         "assets/images/steelfall/steelfall-mascara-buho.webp",
         "assets/images/steelfall/steelfall-intro.webp",
-        "assets/images/steelfall/steelfall-heroe.webp",
-        "assets/images/steelfall/steelfall-premio.webp"
+        "assets/images/steelfall/steelfall-heroe.webp"
       ],
       "Technologies": [
         "Unity",
@@ -311,8 +311,8 @@
   "SoftSkills.Title": "Soft Skills",
   "SoftSkills.Description": [
     "I turn what the business needs into something that can be built. At <span class='underline'>Klixmant</span> I do it with management and Industrial Engineering; at <span class='underline'>ClonAI</span> I did it directly with client companies, from diagnosis to launch.",
-    "In my personal life and at work I apply <span class='underline'>Kaizen</span>: improve a little at a time and keep it up. That's how I spent the months between Campuslands and my first job, polishing what I had learned while I looked for work.",
-    "I like being able to measure whether what I built actually helped.",
+    "In my personal life and at work I apply <span class='underline'>Kaizen</span>: improve a little every day and keep it up over time.",
+    "Every system I deliver comes with a way to measure its impact on operations.",
     "I've worked with management, industrial engineers, clients and development teams. These are the skills I take from that:"
   ],
   "SoftSkills.Skills": [
