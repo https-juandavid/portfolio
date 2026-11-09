@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { Location } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { Subject } from 'rxjs';
 
 import { LanguageService } from './language.service';
 
@@ -9,10 +10,14 @@ describe('LanguageService', () => {
   let currentPath: string;
   let translate: jasmine.SpyObj<TranslateService>;
   let location: jasmine.SpyObj<Location>;
+  let defaultLangChange: Subject<LangChangeEvent>;
 
   beforeEach(() => {
     currentPath = '';
-    translate = jasmine.createSpyObj('TranslateService', ['addLangs', 'setDefaultLang']);
+    defaultLangChange = new Subject<LangChangeEvent>();
+    translate = jasmine.createSpyObj('TranslateService', ['addLangs', 'setDefaultLang'], {
+      onDefaultLangChange: defaultLangChange,
+    });
     location = jasmine.createSpyObj('Location', ['go', 'path']);
     location.path.and.callFake(() => currentPath);
 
@@ -56,5 +61,20 @@ describe('LanguageService', () => {
     service.initLanguage();
 
     expect(service.language).toBe('en');
+  });
+
+  it('syncs html lang, title and meta tags with the active language', () => {
+    currentPath = '/en';
+    service.initLanguage();
+    defaultLangChange.next({
+      lang: 'en',
+      translations: { 'Meta.Title': 'EN title', 'Meta.Description': 'EN description' },
+    });
+
+    expect(document.documentElement.lang).toBe('en');
+    expect(document.title).toBe('EN title');
+    expect(document.querySelector('meta[name="description"]')?.getAttribute('content')).toBe('EN description');
+    expect(document.querySelector('meta[property="og:locale"]')?.getAttribute('content')).toBe('en_US');
+    expect(document.querySelector('link[rel="canonical"]')?.getAttribute('href')).toBe('https://juandavid.cv/en');
   });
 });
