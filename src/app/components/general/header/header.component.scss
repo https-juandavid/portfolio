@@ -217,15 +217,28 @@
     }
 }
 
-@media (max-width: 827px) {
+// Five nav items + CV + language no longer fit on one line below 1200px,
+// so switch to the hamburger menu there.
+@media (max-width: 1199.98px) {
     nav .nav {
         display: none;
     }
 }
 
-@media (min-width: 827px) {
+@media (min-width: 1200px) {
     .menu-wrapper,
     .menu-responsive {
+        display: none;
+    }
+}
+
+// 1200-1399px: the container is 950px wide; tighten spacing and show
+// only the flag in the language toggle so the menu stays on one line.
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .main-navbar .menu-ul li {
+        margin: 0 6px;
+    }
+    #dropdownForm1 .flag-text {
         display: none;
     }
 }

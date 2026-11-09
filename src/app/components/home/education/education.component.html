@@ -1,0 +1,96 @@
+<section class="section education" id="education">
+  <div class="container">
+    <div class="section-box">
+      <div
+        class="section-title-container"
+        data-animate="slideInUp"
+        data-animate-duration="1000"
+      >
+        <h3 class="section-title">
+          <span class="n-section-title">03.</span>
+          {{ "Education.Title" | translate }}
+        </h3>
+      </div>
+
+      <div class="row">
+        <!-- Studies + languages -->
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+          <div class="edu-group" data-animate="fadeInLeft" data-animate-duration="800">
+            <h4 class="edu-label">{{ "Education.StudiesLabel" | translate }}</h4>
+            <ul class="edu-list">
+              @for (study of "Education.Studies" | translate; track $index) {
+                <li class="edu-item">
+                  <h5 class="edu-title">{{ study.Title }}</h5>
+                  <p class="edu-meta">
+                    {{ study.Place }} <span class="edu-dot">·</span> {{ study.Date }}
+                  </p>
+                  @if (study.Description) {
+                    <p class="edu-description">{{ study.Description }}</p>
+                  }
+                </li>
+              }
+            </ul>
+          </div>
+
+          <div class="edu-group" data-animate="fadeInLeft" data-animate-duration="800" data-animate-delay="200">
+            <h4 class="edu-label">{{ "Education.AchievementsLabel" | translate }}</h4>
+            <ul class="edu-list">
+              @for (achievement of "Education.Achievements" | translate; track $index) {
+                <li class="edu-item">
+                  <h5 class="edu-title">{{ achievement.Title }}</h5>
+                  <p class="edu-meta">{{ achievement.Place }}</p>
+                  @if (achievement.Description) {
+                    <p class="edu-description">{{ achievement.Description }}</p>
+                  }
+                  @if (achievement.Link) {
+                    <a
+                      class="underline edu-link"
+                      [href]="achievement.Link"
+                      target="_blank"
+                      rel="noopener"
+                      (click)="analyticsService.sendAnalyticEvent('click_achievement', 'education', achievement.Title)"
+                    >{{ achievement.LinkText }}</a>
+                  }
+                </li>
+              }
+            </ul>
+          </div>
+
+          <div class="edu-group mb-0" data-animate="fadeInLeft" data-animate-duration="800" data-animate-delay="300">
+            <h4 class="edu-label">{{ "Education.LanguagesLabel" | translate }}</h4>
+            <p class="edu-languages">{{ "Education.Languages" | translate }}</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="col-12 col-lg-6">
+          <div class="edu-group mb-0" data-animate="fadeInRight" data-animate-duration="800" data-animate-delay="200">
+            <h4 class="edu-label">{{ "Education.CertificationsLabel" | translate }}</h4>
+            <ul class="cert-list">
+              @for (cert of "Education.Certifications" | translate; track $index) {
+                <li class="cert-item">
+                  <div class="cert-text">
+                    <h5 class="cert-title">{{ cert.Title }}</h5>
+                    <p class="edu-meta mb-0">
+                      {{ cert.Issuer }} <span class="edu-dot">·</span> {{ cert.Date }}
+                    </p>
+                  </div>
+                  @if (cert.Link) {
+                    <a
+                      class="underline edu-link cert-link"
+                      [href]="cert.Link"
+                      target="_blank"
+                      rel="noopener"
+                      [attr.aria-label]="('Education.VerifyText' | translate) + ': ' + cert.Title"
+                      (click)="analyticsService.sendAnalyticEvent('click_certificate', 'education', cert.Title)"
+                    >{{ "Education.VerifyText" | translate }}</a>
+                  }
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

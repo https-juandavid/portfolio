@@ -1,0 +1,112 @@
+@use "./../../../../variables" as *;
+
+.education {
+    .section-title-container {
+        margin-bottom: 50px;
+    }
+
+    .edu-group {
+        margin-bottom: 40px;
+    }
+
+    .edu-label {
+        font-family: $CodeFont;
+        font-size: 13px;
+        font-weight: normal;
+        color: $Green;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+
+    .edu-list,
+    .cert-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .edu-item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 25px;
+        border-left: 2px solid $LightestNavy;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .edu-title,
+    .cert-title {
+        color: $LightestSlate;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    .edu-meta {
+        font-family: $CodeFont;
+        font-size: 13px;
+        color: $Slate;
+        margin-bottom: 8px;
+    }
+
+    .edu-dot {
+        color: $Green;
+        margin: 0 4px;
+    }
+
+    .edu-description,
+    .edu-languages {
+        color: $LightSlate;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .edu-link {
+        font-family: $CodeFont;
+        font-size: 13px;
+        padding-bottom: 4px;
+    }
+
+    .cert-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 18px 20px;
+        margin-bottom: 12px;
+        background-color: $LightNavy;
+        border-radius: 3px;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .cert-title {
+            font-size: 17px;
+        }
+    }
+
+    .cert-link {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .education {
+        .cert-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+}
