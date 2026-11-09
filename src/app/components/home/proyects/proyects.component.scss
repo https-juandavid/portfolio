@@ -89,7 +89,6 @@
 // column (600px wide / 50% on medium screens, fixed height) so nothing shifts.
 .proyect-placeholder {
     flex: 0 0 600px;
-    width: 600px;
     height: 320px;
     align-self: center;
 
@@ -157,7 +156,6 @@
 @media (min-width: 768px) and (max-width: 1300px) {
     .proyect-placeholder {
         flex: 0 0 50%;
-        width: 50%;
     }
 }
 
