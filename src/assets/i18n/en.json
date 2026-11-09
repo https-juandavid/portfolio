@@ -195,7 +195,13 @@
     {
       "Title": "Steelfall · Global Game Jam 2026",
       "Description": "Steelfall won <span class='underline'>1st place</span> at the Bucaramanga site of Global Game Jam 2026. We built it in 48 hours in Unity; I programmed the enemy mechanics and the UI in C# together with a team. My name is on the game's official page. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' rel='noopener' class='underline'>View on Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' rel='noopener' class='underline'>Play on itch.io</a>",
-      "imgs": [],
+      "imgs": [
+        "assets/images/steelfall/steelfall-gameplay.webp",
+        "assets/images/steelfall/steelfall-mascara-buho.webp",
+        "assets/images/steelfall/steelfall-intro.webp",
+        "assets/images/steelfall/steelfall-heroe.webp",
+        "assets/images/steelfall/steelfall-premio.webp"
+      ],
       "Technologies": [
         "Unity",
         "C#"
