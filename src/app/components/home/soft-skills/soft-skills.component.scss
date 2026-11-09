@@ -55,6 +55,8 @@
 
         img {
             z-index: 2;
+            width: 100%;
+            height: auto;
             position: relative;
 
             &.clickable {
@@ -128,6 +130,8 @@
 }
 
 .modal-image {
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     border-radius: 8px;

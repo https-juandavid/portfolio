@@ -205,7 +205,7 @@
       "Title": "Multisoluciones S.A.S",
       "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visit preview</a>",
       "imgs": [
-        "assets/images/multisoluciones-santander/ss_multisoluciones-santander.png"
+        "assets/images/multisoluciones-santander/ss_multisoluciones-santander.webp"
       ],
       "Technologies": ["React", "Radix UI", "TailwindCSS", "Zod"],
       "Link": "https://multisoluciones-santander.vercel.app/"
@@ -215,9 +215,9 @@
       "Title": "Lotto",
       "Description": "I participated in the development of a fullstack system for tracking lottery ticket sales. It features a <span class='underline'>point-of-sale module</span>, <span class='underline'>real-time notifications</span>, <span class='underline'>Excel file export</span>, and more. Developed using <span class='underline'>React</span> and <span class='underline'>NodeJS</span>.",
       "imgs": [
-        "assets/images/lotto/ss_lotto_sales.png",
-        "assets/images/lotto/ss_lotto_dashboard.png",
-        "assets/images/lotto/ss_lotto_sale_completed.png"
+        "assets/images/lotto/ss_lotto_sales.webp",
+        "assets/images/lotto/ss_lotto_dashboard.webp",
+        "assets/images/lotto/ss_lotto_sale_completed.webp"
       ],
       "Technologies": [
         "NodeJS",
@@ -233,7 +233,7 @@
     {
       "Title": "Latin Lust Studios",
       "Description": "I designed the logo and developed the website for <span class='underline'>Latin Lust Studios</span>, implementing a responsive interface, <span class='underline'>consistent visual identity</span>, and an optimized structure for service presentation and client acquisition for an adult production and streaming platform.",
-      "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.png"],
+      "imgs": ["assets/images/latin-lust-studios/latin-lust-screenshot.webp"],
       "Technologies": ["NextJS", "React", "TailwindCSS", "Framer Motion"],
       "Link": ""
     }

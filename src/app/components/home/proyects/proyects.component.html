@@ -44,7 +44,7 @@
             <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
                 <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
                     <div #imgContainer class='img-container'>
-                        <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
+                        <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title" loading="lazy" decoding="async">
                     </div>
                 </ng-template>
             </ng-container>
@@ -52,7 +52,7 @@
         <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000">
             <div class="img-feature-proyect-box">
                 <div class="img-container" style='width: auto;'>
-                    <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.Title" width='600px'>
+                    <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.Title" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
