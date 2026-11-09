@@ -183,7 +183,7 @@
     {
       "Title": "WhatsApp sales chatbot · Klixmant",
       "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp through an AI-powered CRM: I deployed Chatwoot and n8n with Docker and connected them to the ERP through HTTP requests authenticated with an API key. The bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a week</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
-      "imgs": [],
+      "imgs": ["assets/images/klixmant-chatbot/cola-preventas.webp"],
       "Technologies": ["WhatsApp Business API", "Chatwoot", "n8n", "Docker", "Effi ERP"],
       "Link": ""
     },

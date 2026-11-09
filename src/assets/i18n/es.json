@@ -183,7 +183,7 @@
     {
       "Title": "Chatbot de ventas por WhatsApp · Klixmant",
       "Description": "Los vendedores comisionistas cargaban cada venta llenando un formulario largo y denso en el ERP, o la mandaban por WhatsApp a una persona que todas las mañanas las subía a mano. Ahora la cargan ellos mismos por WhatsApp, a través de un CRM con IA: monté Chatwoot y n8n en Docker y los conecté al ERP con peticiones HTTP autenticadas con API key. El bot valida el pedido, crea la remisión y sincroniza el ERP propio con <span class='underline'>Effi ERP</span> para que arranque la orden de producción. Procesa unas <span class='underline'>500 ventas a la semana</span>, y el cargue de ventas, las novedades logísticas y las guías de transporte son un <span class='underline'>60% más eficientes</span>.",
-      "imgs": [],
+      "imgs": ["assets/images/klixmant-chatbot/cola-preventas.webp"],
       "Technologies": ["WhatsApp Business API", "Chatwoot", "n8n", "Docker", "Effi ERP"],
       "Link": ""
     },
