@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ElementRef, OnDestroy } from '@angula
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { LoadingService } from 'src/app/services/loading/loading.service';
 import { Subscription } from 'rxjs';
+import { prefersReducedMotion } from 'src/app/utils/reduced-motion';
 
 // Configuración centralizada de animaciones
 interface AnimationConfig {
@@ -74,6 +75,11 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private initAnimations(): void {
     const banner = this.elementRef.nativeElement;
+
+    if (prefersReducedMotion()) {
+      this.showFinalState(banner);
+      return;
+    }
 
     // Configuración de animaciones secuenciales
     const animations: AnimationConfig[] = [
@@ -204,6 +210,18 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
     button.style.opacity = '1';
     button.style.transform = 'scale(1)';
+  }
+
+  /** Reduced motion: show every banner element in its final state at once (no typewriter/glitch/fades). */
+  private showFinalState(banner: HTMLElement): void {
+    ['.banner-pretitle-text', '.banner-name', '.banner-subtitle', '.banner-description', '.main-btn'].forEach(selector => {
+      const el = banner.querySelector(selector) as HTMLElement | null;
+      if (!el) return;
+      el.style.setProperty('transition', 'none', 'important');
+      el.style.setProperty('opacity', '1', 'important');
+      el.style.setProperty('transform', 'none', 'important');
+      el.style.setProperty('filter', 'none', 'important');
+    });
   }
 
   private clearAllTimeouts(): void {

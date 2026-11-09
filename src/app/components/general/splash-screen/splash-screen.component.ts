@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import lottie from 'lottie-web';
+import { prefersReducedMotion } from 'src/app/utils/reduced-motion';
 
 @Component({
   selector: 'app-splash-screen',
@@ -44,14 +45,22 @@ export class SplashScreenComponent implements OnInit, OnDestroy {
   }
 
   private initLottieAnimation(): void {
+    const reducedMotion = prefersReducedMotion();
     try {
       this.lottieAnimation = lottie.loadAnimation({
         container: this.lottieContainer.nativeElement,
         renderer: 'svg',
-        loop: true,
-        autoplay: true,
+        loop: !reducedMotion,
+        autoplay: !reducedMotion,
         path: 'assets/lotties/loader.json'
       });
+
+      // Reduced motion: show a single static frame instead of the looping loader.
+      if (reducedMotion) {
+        this.lottieAnimation.addEventListener('DOMLoaded', () => {
+          this.lottieAnimation.goToAndStop(Math.floor(this.lottieAnimation.totalFrames / 2), true);
+        });
+      }
 
       this.lottieAnimation.addEventListener('error', (error: any) => {
         console.warn('Lottie animation error:', error);

@@ -4,6 +4,7 @@ import {trigger, style, query, transition, stagger, animate } from '@angular/ani
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { UntypedFormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
+import { prefersReducedMotion } from 'src/app/utils/reduced-motion';
 
 @Component({
     selector: 'app-header',
@@ -66,14 +67,18 @@ export class HeaderComponent implements OnInit {
   goHome(event: Event): void {
     event.preventDefault();
     this.responsiveMenuVisible = false;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: this.scrollBehavior() });
+  }
+
+  private scrollBehavior(): ScrollBehavior {
+    return prefersReducedMotion() ? 'auto' : 'smooth';
   }
 
   scroll(el) {
     if(document.getElementById(el)) {
-      document.getElementById(el).scrollIntoView({behavior: 'smooth'});
+      document.getElementById(el).scrollIntoView({behavior: this.scrollBehavior()});
     } else{
-      this.router.navigate(['/home']).then(()=> document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
+      this.router.navigate(['/home']).then(()=> document.getElementById(el).scrollIntoView({behavior: this.scrollBehavior()}) );
     }
     this.responsiveMenuVisible=false;
   }

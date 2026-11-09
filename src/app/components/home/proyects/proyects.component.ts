@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { prefersReducedMotion } from 'src/app/utils/reduced-motion';
 
 @Component({
   selector: 'app-proyects',
@@ -16,7 +17,7 @@ export class ProyectsComponent implements OnInit {
     pullDrag: false,
     navSpeed: 700,
     items: 1,
-    autoplay: true,
+    autoplay: !prefersReducedMotion(),
     autoplayTimeout: 3000,
   };
 

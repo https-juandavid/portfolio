@@ -6,6 +6,7 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { ParticlesService } from './services/particles/particles.service';
 import { LoadingService } from './services/loading/loading.service';
+import { prefersReducedMotion } from './utils/reduced-motion';
 
 @Component({
     selector: 'app-root',
@@ -33,9 +34,12 @@ export class AppComponent implements OnInit, OnDestroy{
     // Title and meta description live in src/index.html (single source for SEO/social previews).
 
     // Inicializar partículas globales después de un breve delay
-    setTimeout(() => {
-      this.particlesService.init();
-    }, 100);
+    // Skipped entirely when the user prefers reduced motion.
+    if (!prefersReducedMotion()) {
+      setTimeout(() => {
+        this.particlesService.init();
+      }, 100);
+    }
   }
 
   private initLenis(): void {
@@ -68,9 +72,12 @@ export class AppComponent implements OnInit, OnDestroy{
     this.appContentVisible = true;
     
     // Inicializar Lenis después de que el contenido sea visible
-    setTimeout(() => {
-      this.initLenis();
-    }, 100);
+    // Smooth scrolling is motion too: keep native scrolling for reduced-motion users.
+    if (!prefersReducedMotion()) {
+      setTimeout(() => {
+        this.initLenis();
+      }, 100);
+    }
     
     // Iniciar animaciones de los componentes
     this.loadingService.startAnimations();

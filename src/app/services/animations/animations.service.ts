@@ -1,5 +1,6 @@
 import { Injectable, ElementRef, Renderer2, RendererFactory2 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { prefersReducedMotion } from 'src/app/utils/reduced-motion';
 
 export interface AnimationConfig {
   type: 'fadeInUp' | 'fadeInDown' | 'fadeInLeft' | 'fadeInRight' | 'scaleIn' | 'slideInUp' | 'slideInDown' | 'rotateIn' | 'morphIn' | 'glitch' | 'typewriter';
@@ -310,6 +311,9 @@ export class AnimationsService {
 
   // Public methods
   public observeElement(element: HTMLElement, config?: Partial<AnimationConfig>): void {
+    // Reduced motion: leave the element in its final, visible state (no entrance/typewriter effects).
+    if (prefersReducedMotion()) return;
+
     // Apply config as data attributes if provided
     if (config) {
       Object.entries(config).forEach(([key, value]) => {
@@ -341,6 +345,7 @@ export class AnimationsService {
   }
 
   public addHoverEffects(element: HTMLElement, effects: ('lift' | 'glow')[]): void {
+    if (prefersReducedMotion()) return;
     effects.forEach(effect => {
       this.renderer.addClass(element, `animate-hover-${effect}`);
     });
