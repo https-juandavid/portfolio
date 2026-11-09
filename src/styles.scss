@@ -132,9 +132,11 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
+  // Let long project descriptions grow the row instead of overflowing into the next project.
   .proyect-container {
     margin: 30px 0 !important;
-    height: 385px !important;
+    height: auto !important;
+    min-height: 385px;
   }
 }
 .container {
@@ -145,6 +147,13 @@ a {
 @media (min-width: 1100px) and (max-width: 1300px) {
   .container {
     max-width: 950px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .proyect-container {
+    height: auto !important;
+    min-height: 360px;
   }
 }
 
