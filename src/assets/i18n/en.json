@@ -101,7 +101,7 @@
       "Description": [
         "I gather the requirements for the efficiency system alongside the industrial engineer who measures cycle times, efficiency percentages and operating coefficients on the plant floor, and turn them into ERP rules.",
         "I built <span class='underline'>real-time production floor monitoring</span>, integrated into the company's own ERP. It calculates efficiency, textile coefficients and cycle times for <span class='underline'>7 production processes and 15 operators</span>, with Next.js, TypeScript, Prisma and MySQL.",
-        "I developed the WhatsApp chatbot (WhatsApp Business API and n8n) that commissioned sales reps use to log around <span class='underline'>500 sales a week</span>. It validates each order, creates the delivery note and syncs the company ERP with Effi ERP to trigger the production order.",
+        "I built an AI-powered sales CRM on WhatsApp: I deployed <span class='underline'>Chatwoot</span> and <span class='underline'>n8n</span> with Docker and connected them to the ERP through HTTP requests authenticated with an API key. Commissioned sales reps use it to log around <span class='underline'>500 sales a week</span>; it validates each order, creates the delivery note and syncs the company ERP with Effi ERP to trigger the production order.",
         "With that chatbot, sales loading, logistics updates and shipping guide management are <span class='underline'>60% more efficient</span>.",
         "I lead the AI development workflow: recurring meetings with management, a PRD management signs off on, the spec in OpenSpec and implementation with agents (Claude Code and OpenCode). Requirement rework <span class='underline'>dropped by 50%</span>."
       ]
@@ -182,13 +182,9 @@
 
     {
       "Title": "WhatsApp sales chatbot · Klixmant",
-      "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp: the bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a week</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
+      "Description": "Commissioned sales reps used to log each sale by filling out a long, dense form in the ERP, or by sending it over WhatsApp to someone who uploaded them by hand every morning. Now they log it themselves on WhatsApp through an AI-powered CRM: I deployed Chatwoot and n8n with Docker and connected them to the ERP through HTTP requests authenticated with an API key. The bot validates the order, creates the delivery note and syncs the company ERP with <span class='underline'>Effi ERP</span> so the production order can start. It handles around <span class='underline'>500 sales a week</span>, and sales loading, logistics updates and shipping guides are <span class='underline'>60% more efficient</span>.",
       "imgs": [],
-      "Technologies": [
-        "WhatsApp Business API",
-        "n8n",
-        "Effi ERP"
-      ],
+      "Technologies": ["WhatsApp Business API", "Chatwoot", "n8n", "Docker", "Effi ERP"],
       "Link": ""
     },
 

@@ -8,7 +8,7 @@ Portfolio: https://juandavid.cv (Spanish: https://juandavid.cv/es, English: http
 
 - **Klixmant** (Colombian apparel factory), Fullstack Developer and AI Development Lead, July 2026 to present.
   - Built real-time production floor monitoring integrated into the company ERP: efficiency, textile coefficients and cycle times for 7 production processes and 15 operators (Next.js, TypeScript, Prisma, MySQL).
-  - Built a WhatsApp sales chatbot (WhatsApp Business API, n8n) that handles about 500 sales a week and syncs the in-house ERP with Effi ERP. Sales entry, logistics updates and shipping guides became 60% more efficient.
+  - Built an AI-powered sales CRM on WhatsApp (Chatwoot and n8n on Docker, WhatsApp Business API) connected to the ERP through API-key-authenticated HTTP requests. It handles about 500 sales a week and syncs the in-house ERP with Effi ERP. Sales entry, logistics updates and shipping guides became 60% more efficient.
   - Leads an AI-assisted workflow (PRD validated by management, OpenSpec, Claude Code and OpenCode); requirement rework dropped 50%.
 - **M.S.S (Multisoluciones S.A.S)**, Digital Identity and Web Development, November 2025 to June 2026. Designed and built the company website (React, Radix UI, TailwindCSS, Zod) and its brand identity.
 - **Tiresia**, Fullstack Developer, May 2025 to November 2025. Modules for a DIAN electronic documents platform with Angular, NestJS and RxJS; unit and E2E tests.

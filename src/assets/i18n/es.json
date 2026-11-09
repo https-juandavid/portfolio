@@ -101,7 +101,7 @@
       "Description": [
         "Levanto los requerimientos del sistema de eficiencia junto al ingeniero industrial que mide tiempos, porcentajes de eficiencia y coeficientes operativos en la planta, y los convierto en reglas del ERP.",
         "Construí el <span class='underline'>monitoreo en planta de fabricación en tiempo real</span>, integrado al ERP propio. Calcula la eficiencia, los coeficientes textiles y los tiempos de ciclo para <span class='underline'>7 procesos productivos y 15 operarios</span>, con Next.js, TypeScript, Prisma y MySQL.",
-        "Desarrollé el chatbot de WhatsApp (WhatsApp Business API y n8n) por el que los vendedores comisionistas cargan unas <span class='underline'>500 ventas a la semana</span>. Valida cada pedido, crea la remisión y sincroniza el ERP propio con Effi ERP para disparar la orden de producción.",
+        "Desarrollé un CRM de ventas con IA sobre WhatsApp: monté <span class='underline'>Chatwoot</span> y <span class='underline'>n8n</span> en Docker y los conecté al ERP con peticiones HTTP autenticadas con API key. Por ahí los vendedores comisionistas cargan unas <span class='underline'>500 ventas a la semana</span>; valida cada pedido, crea la remisión y sincroniza el ERP propio con Effi ERP para disparar la orden de producción.",
         "Con ese chatbot, el cargue de ventas, las novedades logísticas y la gestión de guías de transporte son un <span class='underline'>60% más eficientes</span>.",
         "Lidero el flujo de desarrollo con IA: reuniones periódicas con gerencia, un PRD que gerencia valida, la especificación en OpenSpec y la implementación con agentes (Claude Code y OpenCode). Los retrabajos en requerimientos <span class='underline'>bajaron un 50%</span>."
       ]
@@ -182,13 +182,9 @@
 
     {
       "Title": "Chatbot de ventas por WhatsApp · Klixmant",
-      "Description": "Los vendedores comisionistas cargaban cada venta llenando un formulario largo y denso en el ERP, o la mandaban por WhatsApp a una persona que todas las mañanas las subía a mano. Ahora la cargan ellos mismos por WhatsApp: el bot valida el pedido, crea la remisión y sincroniza el ERP propio con <span class='underline'>Effi ERP</span> para que arranque la orden de producción. Procesa unas <span class='underline'>500 ventas a la semana</span>, y el cargue de ventas, las novedades logísticas y las guías de transporte son un <span class='underline'>60% más eficientes</span>.",
+      "Description": "Los vendedores comisionistas cargaban cada venta llenando un formulario largo y denso en el ERP, o la mandaban por WhatsApp a una persona que todas las mañanas las subía a mano. Ahora la cargan ellos mismos por WhatsApp, a través de un CRM con IA: monté Chatwoot y n8n en Docker y los conecté al ERP con peticiones HTTP autenticadas con API key. El bot valida el pedido, crea la remisión y sincroniza el ERP propio con <span class='underline'>Effi ERP</span> para que arranque la orden de producción. Procesa unas <span class='underline'>500 ventas a la semana</span>, y el cargue de ventas, las novedades logísticas y las guías de transporte son un <span class='underline'>60% más eficientes</span>.",
       "imgs": [],
-      "Technologies": [
-        "WhatsApp Business API",
-        "n8n",
-        "Effi ERP"
-      ],
+      "Technologies": ["WhatsApp Business API", "Chatwoot", "n8n", "Docker", "Effi ERP"],
       "Link": ""
     },
 
