@@ -165,7 +165,10 @@
     {
       "Title": "Monitoreo de eficiencia en planta · Klixmant",
       "Description": "La planta no tenía ninguna medición de eficiencia. Un ingeniero industrial viene a medir tiempos, porcentajes de eficiencia y coeficientes operativos con fórmulas estándar del sector textil. Levanté el requerimiento con él, convertí esas fórmulas en reglas de negocio y construí el módulo dentro del <span class='underline'>ERP</span> de la empresa. Hoy la planta ve por primera vez, en tiempo real, su eficiencia, los coeficientes textiles y los tiempos de ciclo de <span class='underline'>7 procesos productivos y 15 operarios</span>. Es un sistema interno, por eso no tiene enlace público.",
-      "imgs": [],
+      "imgs": [
+        "assets/images/klixmant-monitoreo/klixmant_eficiencia.webp",
+        "assets/images/klixmant-monitoreo/klixmant_eficiencia_satelites.webp"
+      ],
       "Technologies": [
         "Next.js",
         "TypeScript",

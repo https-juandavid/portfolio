@@ -165,7 +165,10 @@
     {
       "Title": "Plant efficiency monitoring · Klixmant",
       "Description": "The plant had no efficiency measurement at all. An industrial engineer comes in to measure cycle times, efficiency percentages and operating coefficients using standard textile industry formulas. I gathered the requirements with him, turned those formulas into business rules and built the module inside the company's <span class='underline'>ERP</span>. For the first time, the plant sees its efficiency, textile coefficients and cycle times for <span class='underline'>7 production processes and 15 operators</span> in real time. It's an internal system, so there's no public link.",
-      "imgs": [],
+      "imgs": [
+        "assets/images/klixmant-monitoreo/klixmant_eficiencia.webp",
+        "assets/images/klixmant-monitoreo/klixmant_eficiencia_satelites.webp"
+      ],
       "Technologies": [
         "Next.js",
         "TypeScript",
