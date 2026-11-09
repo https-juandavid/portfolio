@@ -58,7 +58,7 @@
             <aside id="mobile-menu" [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='this.pageYPosition>0' class="on-top"
                    [attr.inert]="responsiveMenuVisible ? null : ''">
                 <nav>
-                    <ol>
+                    <ol (click)="onMobileMenuClick($event)">
                         <li *ngFor="let item of navItems">
                             <a [href]="'#' + item.id" (click)='$event.preventDefault(); onNavClick(item)'>
                                 {{ item.label | translate }}

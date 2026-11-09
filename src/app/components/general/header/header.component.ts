@@ -63,6 +63,22 @@ export class HeaderComponent implements OnInit {
     this.responsiveMenuVisible = !this.responsiveMenuVisible;
   }
 
+  /** Any link/button inside the mobile menu (sections, CV, language) closes it. */
+  onMobileMenuClick(event: Event): void {
+    const target = event.target as HTMLElement | null;
+    if (target?.closest('a, button, [role="button"]')) {
+      this.responsiveMenuVisible = false;
+    }
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void {
+    if (!this.responsiveMenuVisible) return;
+    this.responsiveMenuVisible = false;
+    // Return focus to the toggle so keyboard users are not left inside a hidden (inert) menu.
+    (document.querySelector('.hamburger-menu') as HTMLElement | null)?.focus();
+  }
+
   /** Brand logo: stay on the current language and go back to the top. */
   goHome(event: Event): void {
     event.preventDefault();
