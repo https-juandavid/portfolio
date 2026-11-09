@@ -18,7 +18,7 @@
   ⚡ COLORES CONTRASTANTES:
   - Estado normal: Verde ($Green) con sombra negra fuerte
   - Estado hover: Blanco (#ffffff) con sombra negra profunda
-  - Efecto glitch: Rosa (#ff0066) y Verde agua (#00ffaa) brillantes
+  - Efecto glitch: Rosa (#ff8cba, tinte accesible de #ff0066) y Verde agua (#00ffaa) brillantes
   - Código ultra limpio sin elementos innecesarios
 */
 
@@ -81,8 +81,8 @@
     height: 200%;
     background: radial-gradient(
       circle at center,
-      rgba(100, 255, 218, 0.15) 0%,
-      rgba(100, 255, 218, 0.1) 30%,
+      rgba(100, 255, 218, 0.08) 0%,
+      rgba(100, 255, 218, 0.05) 30%,
       transparent 70%
     );
     border-radius: 50%;
@@ -199,7 +199,8 @@
     transition: opacity 0.1s ease;
 
     &:nth-child(1) {
-      color: #ff0066;
+      // Lighter tint of #ff0066 (was 4.05:1 on #0b2a00, 2.55:1 on #224d11): now >= 4.5:1 on every hover background.
+      color: #ff8cba;
       animation: none;
       text-shadow:
         0 0 10px rgba(255, 0, 102, 0.8),
@@ -224,9 +225,9 @@
       animation-duration: 1.5s;
       background: linear-gradient(
         45deg,
-        rgba(100, 255, 218, 0.05) 30%,
-        rgba(100, 255, 218, 0.15) 50%,
-        rgba(100, 255, 218, 0.05) 70%
+        rgba(100, 255, 218, 0.03) 30%,
+        rgba(100, 255, 218, 0.08) 50%,
+        rgba(100, 255, 218, 0.03) 70%
       );
     }
 
