@@ -2,9 +2,9 @@
     <div class="container">
         <div class="section-box">
             <div class="">
-                <h3 class="section-title">
+                <h2 class="section-title">
                     <span class='n-section-title'>04.</span> {{"OtherProjects.Title" | translate}}
-                </h3>
+                </h2>
             </div>
             <div class="mt-5">
                 <div class="row p-0">
@@ -18,8 +18,8 @@
                                     <img src='assets/icons/folder.svg' width="40">
                                 </div>
                                 <div class="col-6 d-flex p-0 justify-content-end">
-                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "proyects", "click")' style='color: inherit' [href]="project['demoLink']" target="_blank"><i id="demoLink" class="ml-3 fas fa-external-link-alt"></i></a>
-                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "proyects", "click")' style='color: inherit' [href]="project['ghLink']" target="_blank"><i id="ghLink" class="ml-4 fab fa-github"></i></a>
+                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "proyects", "click")' style='color: inherit' [href]="project['demoLink']" target="_blank" rel="noopener" [attr.aria-label]="project.Title"><i id="demoLink" class="ml-3 fas fa-external-link-alt" aria-hidden="true"></i></a>
+                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "proyects", "click")' style='color: inherit' [href]="project['ghLink']" target="_blank" rel="noopener" [attr.aria-label]="'GitHub: ' + project.Title"><i id="ghLink" class="ml-4 fab fa-github" aria-hidden="true"></i></a>
                                 </div>
                                 <h5 class="other-proyect-title mt-4">{{project.Title}}</h5>
                                 <p class="other-proyect-description">

@@ -194,7 +194,7 @@
 
     {
       "Title": "Steelfall · Global Game Jam 2026",
-      "Description": "Steelfall ganó el <span class='underline'>1.er lugar</span> en la sede Bucaramanga de la Global Game Jam 2026. Lo hicimos en 48 horas en Unity; programé en C# junto a un equipo las mecánicas de los enemigos y la interfaz. Mi nombre aparece en la página oficial del juego. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' class='underline'>Ver en Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' class='underline'>Jugar en itch.io</a>",
+      "Description": "Steelfall ganó el <span class='underline'>1.er lugar</span> en la sede Bucaramanga de la Global Game Jam 2026. Lo hicimos en 48 horas en Unity; programé en C# junto a un equipo las mecánicas de los enemigos y la interfaz. Mi nombre aparece en la página oficial del juego. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' rel='noopener' class='underline'>Ver en Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' rel='noopener' class='underline'>Jugar en itch.io</a>",
       "imgs": [],
       "Technologies": [
         "Unity",
@@ -205,7 +205,7 @@
 
     {
       "Title": "Multisoluciones S.A.S",
-      "Description": "Participé como responsable del <span class='underline'>diseño y desarrollo</span> de la interfaz web corporativa, creando una experiencia de usuario moderna, accesible y alineada con la <span class='underline'>identidad de marca</span> de la empresa. Implementé componentes reutilizables, validación de formularios y una estructura escalable orientada a rendimiento y mantenibilidad. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visitar vista previa</a>",
+      "Description": "Participé como responsable del <span class='underline'>diseño y desarrollo</span> de la interfaz web corporativa, creando una experiencia de usuario moderna, accesible y alineada con la <span class='underline'>identidad de marca</span> de la empresa. Implementé componentes reutilizables, validación de formularios y una estructura escalable orientada a rendimiento y mantenibilidad. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' rel='noopener' class='underline'>Visitar vista previa</a>",
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.webp"
       ],

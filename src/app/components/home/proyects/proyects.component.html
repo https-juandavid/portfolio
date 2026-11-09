@@ -2,9 +2,9 @@
     <div class="container">
         <div class="section-box">
             <div data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="section-title">
+                <h2 class="section-title">
                     <span class='n-section-title'>05.</span> {{"FeatureProjects.Title" | translate}}
-                </h3>
+                </h2>
             </div>
 
             <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index' class="d-flex proyect-container" data-aos="fade-up" data-aos-duration="1000">
@@ -24,8 +24,8 @@
                             </li>
                         </ul>
                         <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-links">
-                            <a *ngIf="project['ghLink']" style='color: inherit' [href]="project['ghLink']" target="_blank"><i class="ml-3 fab fa-github"></i></a>
-                            <a *ngIf="project['Link']" style='color: inherit' [href]="project['Link']" target="_blank" rel="noopener" [attr.aria-label]="project.Title"><i class="ml-3 fas fa-external-link-alt"></i></a>
+                            <a *ngIf="project['ghLink']" class="icon-link ml-3" style='color: inherit' [href]="project['ghLink']" target="_blank" rel="noopener" [attr.aria-label]="'GitHub: ' + project.Title"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a *ngIf="project['Link']" class="icon-link ml-3" style='color: inherit' [href]="project['Link']" target="_blank" rel="noopener" [attr.aria-label]="project.Title"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
     <ng-container *ngIf="project.imgs?.length; else noImages">
         <owl-carousel-o class='owl-carousel-o' [options]="project.imgs.length > 1 ? customOptions : singleImageOptions">
             <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
-                <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
+                <ng-template carouselSlide [id]="slug(project.Title)+'-slide-'+i+'-'+imgIndex">
                     <div #imgContainer class='img-container'>
                         <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title" loading="lazy" decoding="async">
                     </div>

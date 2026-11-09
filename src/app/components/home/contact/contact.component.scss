@@ -34,6 +34,7 @@
         width: fit-content;
     }
     .contact-pre-title{
+        line-height: 1.2; // was an <h3>; keep heading line-height
         position: relative;
         display: -webkit-box;
         display: -webkit-flex;

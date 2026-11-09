@@ -194,7 +194,7 @@
 
     {
       "Title": "Steelfall · Global Game Jam 2026",
-      "Description": "Steelfall won <span class='underline'>1st place</span> at the Bucaramanga site of Global Game Jam 2026. We built it in 48 hours in Unity; I programmed the enemy mechanics and the UI in C# together with a team. My name is on the game's official page. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' class='underline'>View on Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' class='underline'>Play on itch.io</a>",
+      "Description": "Steelfall won <span class='underline'>1st place</span> at the Bucaramanga site of Global Game Jam 2026. We built it in 48 hours in Unity; I programmed the enemy mechanics and the UI in C# together with a team. My name is on the game's official page. <br/><br/> <a href='https://globalgamejam.org/games/2026/steelfall-4' target='_blank' rel='noopener' class='underline'>View on Global Game Jam</a> · <a href='https://itch.io/jam/global-game-jam-colombia2026/rate/4252496' target='_blank' rel='noopener' class='underline'>Play on itch.io</a>",
       "imgs": [],
       "Technologies": [
         "Unity",
@@ -205,7 +205,7 @@
 
     {
       "Title": "Multisoluciones S.A.S",
-      "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' class='underline'>Visit preview</a>",
+      "Description": "I was responsible for the <span class='underline'>design and development</span> of the corporate web interface, creating a modern, accessible user experience aligned with the company's <span class='underline'>brand identity</span>. I implemented reusable components, form validation, and a scalable structure focused on performance and maintainability. <br/><br/> <a href='https://multisoluciones-santander.vercel.app/' target='_blank' rel='noopener' class='underline'>Visit preview</a>",
       "imgs": [
         "assets/images/multisoluciones-santander/ss_multisoluciones-santander.webp"
       ],

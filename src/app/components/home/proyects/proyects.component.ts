@@ -33,6 +33,16 @@ export class ProyectsComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /** "Monitoreo de eficiencia · Klixmant" -> "monitoreo-de-eficiencia-klixmant" (valid, space-free slide ids). */
+  slug(text: string): string {
+    return (text || '')
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
   debug() {
     this.imgContainer?.nativeElement.scroll({
       top: this.imgContainer.nativeElement.scrollHeight,

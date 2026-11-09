@@ -1,6 +1,7 @@
 <a
   [href]="href"
   [target]="target"
+  [attr.rel]="target === '_blank' ? 'noopener' : null"
   [class.disabled]="disabled"
   [attr.aria-disabled]="disabled"
   class="dynamic-btn"

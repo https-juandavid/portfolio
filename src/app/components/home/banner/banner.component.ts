@@ -79,7 +79,7 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     const animations: AnimationConfig[] = [
       {
         delay: this.animationTimings.pretitle,
-        element: '.banner-pretitle h1',
+        element: '.banner-pretitle-text',
         action: () => this.animatePretitle(banner)
       },
       {
@@ -118,7 +118,7 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private animatePretitle(banner: HTMLElement): void {
-    const pretitle = banner.querySelector('.banner-pretitle h1') as HTMLElement;
+    const pretitle = banner.querySelector('.banner-pretitle-text') as HTMLElement;
     if (!pretitle) return;
 
     pretitle.style.opacity = '1';
