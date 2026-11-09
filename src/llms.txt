@@ -1,0 +1,31 @@
+# Juan David Contreras
+
+> Fullstack developer with 2+ years building internal business systems: ERPs, DIAN electronic invoicing, AI-automated CRMs and real-time production floor monitoring, with .NET (C#), Angular, NestJS and React.
+
+Portfolio: https://juandavid.cv (Spanish: https://juandavid.cv/es, English: https://juandavid.cv/en)
+
+## Experience
+
+- **Klixmant** (Colombian apparel factory), Fullstack Developer and AI Development Lead, July 2026 to present.
+  - Built real-time production floor monitoring integrated into the company ERP: efficiency, textile coefficients and cycle times for 7 production processes and 15 operators (Next.js, TypeScript, Prisma, MySQL).
+  - Built a WhatsApp sales chatbot (WhatsApp Business API, n8n) that handles about 500 sales a week and syncs the in-house ERP with Effi ERP. Sales entry, logistics updates and shipping guides became 60% more efficient.
+  - Leads an AI-assisted workflow (PRD validated by management, OpenSpec, Claude Code and OpenCode); requirement rework dropped 50%.
+- **M.S.S (Multisoluciones S.A.S)**, Digital Identity and Web Development, November 2025 to June 2026. Designed and built the company website (React, Radix UI, TailwindCSS, Zod) and its brand identity.
+- **Tiresia**, Fullstack Developer, May 2025 to November 2025. Modules for a DIAN electronic documents platform with Angular, NestJS and RxJS; unit and E2E tests.
+- **ClonAI**, AI Developer and Implementer, February 2025 to May 2025. Chatbot flows with LLMs and agents in n8n, WhatsApp integration and audio processing; Angular frontend maintenance.
+- **Schein**, Fullstack .NET Developer, October 2024 to February 2025. Client ERP (accounting, inventory, customers, suppliers) with Blazor, .NET and SQL Server; help desk module; SQL/LINQ optimization with Entity Framework.
+- **Campuslands**, Fullstack Developer Trainee, March 2023 to February 2024. 2,100 hours of in-person training in web development, English and soft skills.
+
+## Awards
+
+- 1st place, Global Game Jam 2026 (Bucaramanga site) with Steelfall, a Unity game built in 48 hours. https://globalgamejam.org/games/2026/steelfall-4
+
+## Skills
+
+Angular, React + Next.js, TypeScript, RxJS, .NET (C#), NestJS, Node.js, Entity Framework / Prisma, SQL Server / PostgreSQL, MySQL / MongoDB, n8n, LLMs and agents, MCP, Claude Code, Docker, Linux.
+
+## Contact
+
+- Email: juandavid.dev00@outlook.com
+- GitHub: https://github.com/https-juandavid
+- LinkedIn: https://www.linkedin.com/in/juandavid-ch/
