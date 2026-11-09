@@ -85,6 +85,88 @@
     display:  none;
 }
 
+// Placeholder for projects without screenshots. Same footprint as the image
+// column (600px wide / 50% on medium screens, fixed height) so nothing shifts.
+.proyect-placeholder {
+    flex: 0 0 600px;
+    width: 600px;
+    height: 320px;
+    align-self: center;
+
+    .placeholder-panel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid rgba($Green, 0.25);
+        background-color: $Navy;
+        background-image:
+            linear-gradient(rgba($Green, 0.07) 1px, transparent 1px),
+            linear-gradient(90deg, rgba($Green, 0.07) 1px, transparent 1px),
+            radial-gradient(ellipse at center, rgba($LightNavy, 0.9) 0%, $Navy 75%);
+        background-size: 28px 28px, 28px 28px, 100% 100%;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    }
+
+    // Slow diagonal sweep over the grid
+    .placeholder-flow {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(115deg, transparent 35%, rgba($Green, 0.08) 50%, transparent 65%);
+        background-size: 250% 100%;
+        animation: placeholder-flow 7s linear infinite;
+    }
+
+    .placeholder-content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .placeholder-icon {
+        color: $Green;
+        opacity: 0.8;
+        margin-bottom: 18px;
+    }
+
+    .placeholder-title {
+        font-family: $CodeFont;
+        font-size: 14px;
+        color: $LightSlate;
+        letter-spacing: 0.02em;
+    }
+}
+
+@keyframes placeholder-flow {
+    from { background-position: 100% 0; }
+    to { background-position: -150% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .proyect-placeholder .placeholder-flow {
+        animation: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .proyect-placeholder {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyect-placeholder {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1300px) {
     .owl-carousel-o{
         display: none;

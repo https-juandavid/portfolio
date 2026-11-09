@@ -8,22 +8,7 @@
             </div>
 
             <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index' class="d-flex proyect-container" data-aos="fade-up" data-aos-duration="1000">
-                <owl-carousel-o class='owl-carousel-o' [options]="project.imgs?.length > 1 ? customOptions : singleImageOptions" *ngIf="i%2==0">
-                    <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
-                        <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
-                            <div #imgContainer class='img-container'>
-                                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-                            </div>
-                        </ng-template>
-                    </ng-container>
-                </owl-carousel-o>
-                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
-                    <div class="img-feature-proyect-box">
-                        <div class="img-container" style='width: auto;'>
-                            <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-                        </div>
-                    </div>
-                </div>
+                <ng-container *ngIf="i%2==0" [ngTemplateOutlet]="projectMedia" [ngTemplateOutletContext]="{ $implicit: project, i: i }"></ng-container>
                 <div [class.proyect-info-right]='i%2==0' [class.proyect-info-left]='i%2!=0' class="h-100" style="background-image: url('{{project.img}}');">
                     <div class="proyect-box">
                         <h4 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="feature-proyect">{{"FeatureProjects.Label" | translate}}</h4>
@@ -44,25 +29,50 @@
                         </div>
                     </div>
                 </div>
-                <owl-carousel-o class='owl-carousel-o' [options]="project.imgs?.length > 1 ? customOptions : singleImageOptions" *ngIf="i%2!=0">
-                    <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
-                        <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
-                            <div class='img-container'>
-                                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-                            </div>
-                        </ng-template>
-                    </ng-container>
-                </owl-carousel-o>
-                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
-                    <div class="img-feature-proyect-box">
-                        <div class="img-container" style='width: auto;'>
-                            <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-                        </div>
-                    </div>
-                </div>
+                <ng-container *ngIf="i%2!=0" [ngTemplateOutlet]="projectMedia" [ngTemplateOutletContext]="{ $implicit: project, i: i }"></ng-container>
             </div>
             <div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Media column: carousel (wide screens) + static image (medium screens), or a placeholder panel when the project has no images. -->
+<ng-template #projectMedia let-project let-i="i">
+    <ng-container *ngIf="project.imgs?.length; else noImages">
+        <owl-carousel-o class='owl-carousel-o' [options]="project.imgs.length > 1 ? customOptions : singleImageOptions">
+            <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
+                <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
+                    <div #imgContainer class='img-container'>
+                        <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+        <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="img-feature-proyect-box">
+                <div class="img-container" style='width: auto;'>
+                    <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.Title" width='600px'>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-template #noImages>
+        <div class="proyect-placeholder" role="img" [attr.aria-label]="project.Title">
+            <div class="placeholder-panel rounded" aria-hidden="true">
+                <div class="placeholder-flow"></div>
+                <div class="placeholder-content">
+                    <svg class="placeholder-icon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                        <rect x="2.5" y="4" width="19" height="16" rx="2"></rect>
+                        <line x1="2.5" y1="8" x2="21.5" y2="8"></line>
+                        <polyline points="8.5 12 6 14.5 8.5 17"></polyline>
+                        <polyline points="15.5 12 18 14.5 15.5 17"></polyline>
+                        <line x1="13" y1="11.5" x2="11" y2="17.5"></line>
+                    </svg>
+                    <span class="placeholder-title">{{ project.Title }}</span>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</ng-template>

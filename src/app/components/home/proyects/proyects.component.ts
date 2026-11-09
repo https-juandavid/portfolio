@@ -34,7 +34,7 @@ export class ProyectsComponent implements OnInit {
   ngOnInit(): void {}
 
   debug() {
-    this.imgContainer.nativeElement.scroll({
+    this.imgContainer?.nativeElement.scroll({
       top: this.imgContainer.nativeElement.scrollHeight,
       left: 0,
       behavior: 'smooth',
